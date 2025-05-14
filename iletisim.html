@@ -2,64 +2,87 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>İletişim | Arzeno İnşaat</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: white;
-      color: #24395c;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: white;
+      color: #003366;
     }
     header {
-      background-color: white;
-      padding: 20px;
-      border-bottom: 2px solid #24395c;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    header img {
+    .logo img {
       height: 80px;
     }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ff6600;
+    }
     main {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px 20px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
     h2 {
       color: #0f1e38;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 6px;
     }
-    .info {
-      margin-bottom: 30px;
-      line-height: 1.8;
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
     }
     iframe {
       width: 100%;
       height: 400px;
-      border: 1px solid #ccc;
       border-radius: 8px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="logo.png" alt="Arzeno İnşaat Logosu">
-</header>
+  <header>
+    <div class="logo">
+      <img src="logo_arzeno.png" alt="Arzeno İnşaat Logosu" />
+    </div>
+    <nav>
+      <a href="index.html">Anasayfa</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="hizmetler.html">Hizmetler</a>
+      <a href="projeler.html">Projeler</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </header>
 
-<main>
-  <h2>📞 İletişim Bilgileri</h2>
-  <div class="info">
+  <main>
+    <h2>📞 İletişim Bilgileri</h2>
     <p><strong>📍 Adres:</strong> Gözcüler Mah. 8. Sokak, Arsuz / Hatay</p>
     <p><strong>📱 Telefon 1:</strong> +90 554 182 51 37</p>
     <p><strong>📱 Telefon 2:</strong> +7 911 748 7776</p>
     <p><strong>📧 E-posta:</strong> dincselahattin1@gmail.com</p>
     <p><strong>🕒 Mesai Saatleri:</strong> Hafta içi 09:00 - 18:00</p>
-  </div>
 
-  <h2>📍 Konum</h2>
-  <iframe src="https://www.google.com/maps?q=Gözcüler+Mah.+8.+Sokak,+Arsuz,+Hatay&output=embed" allowfullscreen loading="lazy"></iframe>
-</main>
+    <h2>📍 Konum</h2>
+    <iframe src="https://www.google.com/maps?q=Gözcüler+Mah.+8.+Sokak,+Arsuz,+Hatay&output=embed" allowfullscreen loading="lazy"></iframe>
+  </main>
 
 </body>
 </html>
