@@ -1,11 +1,12 @@
 
 <!DOCTYPE html>
+
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Arzeno İnşaat - Projeler</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arzeno İnşaat - Projeler</title>
+<style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -84,7 +85,6 @@
       }
     }
     </style>
-
 <style>
 body {
   margin: 0;
@@ -145,8 +145,6 @@ header {
   }
 }
 </style>
-
-
 <script>
 function toggleMenu() {
   const menu = document.getElementById("mobileMenu");
@@ -154,54 +152,95 @@ function toggleMenu() {
 }
 </script>
 
+<style>
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+  }
+  .mobile-menu.show {
+    display: flex;
+  }
+  .mobile-menu a {
+    color: white;
+    font-size: 1.5em;
+    margin: 15px 0;
+    text-decoration: none;
+  }
+  .close-btn {
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+  }
+}
+</style>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("show");
+}
+function closeMenu() {
+  document.getElementById("mobileMenu").classList.remove("show");
+}
+</script>
 </head>
 <body>
-  
 <header>
-  <div class="header-container">
-    <img src="logo_arzeno.png" alt="Arzeno Logo" class="logo" />
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-  </div>
-  <nav id="mobileMenu" class="mobile-menu">
-    <a href="index.html">Anasayfa</a>
-    <a href="hakkimizda.html">Hakkımızda</a>
-    <a href="hizmetler.html">Hizmetler</a>
-    <a href="projeler.html">Projeler</a>
-    <a href="iletisim.html">İletişim</a>
-  </nav>
+<div class="header-container">
+<img alt="Arzeno Logo" class="logo" src="logo_arzeno.png"/>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+</div>
+<nav class="mobile-menu" id="mobileMenu">
+<a href="index.html">Anasayfa</a>
+<a href="hakkimizda.html">Hakkımızda</a>
+<a href="hizmetler.html">Hizmetler</a>
+<a href="projeler.html">Projeler</a>
+<a href="iletisim.html">İletişim</a>
+</nav>
 </header>
-
-  <main>
-
+<main>
 <h2>Gerçekleştirilen Proje Deneyimleri</h2>
-
 <p>Aşağıda yer alan projeler, Arzeno İnşaat kurucusunun yurtiçi ve yurtdışında edindiği doğrudan proje deneyimlerini yansıtmaktadır. Bu projeler şirketin değil, kurucunun geçmişte bireysel olarak görev aldığı çalışmaları kapsamaktadır.</p>
-
 <ul>
-  <li><strong>Amur Gaz Kimya Kompleksi (AGCC)</strong><br>
-  1 milyar USD bütçeli Rusya’nın en büyük petrokimya projelerinden biridir. Kurucu, teknik ofis şefi olarak görev almış; bütçe hazırlığı, iş gücü ve maliyet analizleri, hakediş ve saha koordinasyonunu yürütmüştür. Ayrıca proses borulama, inşaat, mekanik, elektrik ve altyapı işlerine yönelik saha uygulamaları ve teknik ofis çalışmaları incelenmiştir.<br><img src="1205-gkhk.png" alt="Amur Gaz Kimya Kompleksi" style="width:100%; max-width:900px; margin:20px auto; display:block; border-radius:8px;" />
-    </li>
-
-  <li><strong>Omsk Ham Petrol Damıtma ve Vakumlama Ünitesi</strong><br>
-  120 milyon USD bütçeli projede; çelik yapı, betonarme, borulama ve ekipman montaj işleri kapsamında sahada aktif görev alınmıştır. Teknik ofis koordinasyonu ve saha mühendisliği görevleri bir arada yürütülmüş, çok disiplinli imalatlar takip edilmiştir.<br><img src="799e13aca9ddd41cc3bcccb214edbd7b.jpeg" alt="Omsk Ünitesi" style="width:100%; max-width:900px; margin:20px auto; display:block; border-radius:8px;" />
-    </li>
-
-  <li><strong>Severstal Sıcak Fırın Projesi</strong><br>
+<li><strong>Amur Gaz Kimya Kompleksi (AGCC)</strong><br/>
+  1 milyar USD bütçeli Rusya’nın en büyük petrokimya projelerinden biridir. Kurucu, teknik ofis şefi olarak görev almış; bütçe hazırlığı, iş gücü ve maliyet analizleri, hakediş ve saha koordinasyonunu yürütmüştür. Ayrıca proses borulama, inşaat, mekanik, elektrik ve altyapı işlerine yönelik saha uygulamaları ve teknik ofis çalışmaları incelenmiştir.<br/><img alt="Amur Gaz Kimya Kompleksi" src="1205-gkhk.png" style="width:100%; max-width:900px; margin:20px auto; display:block; border-radius:8px;"/>
+</li>
+<li><strong>Omsk Ham Petrol Damıtma ve Vakumlama Ünitesi</strong><br/>
+  120 milyon USD bütçeli projede; çelik yapı, betonarme, borulama ve ekipman montaj işleri kapsamında sahada aktif görev alınmıştır. Teknik ofis koordinasyonu ve saha mühendisliği görevleri bir arada yürütülmüş, çok disiplinli imalatlar takip edilmiştir.<br/><img alt="Omsk Ünitesi" src="799e13aca9ddd41cc3bcccb214edbd7b.jpeg" style="width:100%; max-width:900px; margin:20px auto; display:block; border-radius:8px;"/>
+</li>
+<li><strong>Severstal Sıcak Fırın Projesi</strong><br/>
   100 milyon USD bütçeli endüstriyel projede teknik ofis operasyonları, alt yüklenici sözleşmeleri, ilerleme raporlamaları ve proje kontrol süreçlerinde görev alınmıştır.</li>
-
-  <li><strong>Siburyug Otel Projesi</strong><br>
-  Cephe, çelik, iç mimari ve altyapı işlerini kapsayan 120 milyon USD’lik projede, teklif süreçlerinden sahadaki uygulamalara kadar tüm teknik ofis yönetimi üstlenilmiştir.<br><img src="anapa-sanatorium-sibur-yug-7056.jpeg" alt="Siburyug Otel Projesi" style="width:100%; max-width:900px; margin:20px auto; display:block; border-radius:8px;" />
-    </li>
-
-  <li><strong>DCC Kompleksi (Gazprom Neft)</strong><br>
+<li><strong>Siburyug Otel Projesi</strong><br/>
+  Cephe, çelik, iç mimari ve altyapı işlerini kapsayan 120 milyon USD’lik projede, teklif süreçlerinden sahadaki uygulamalara kadar tüm teknik ofis yönetimi üstlenilmiştir.<br/><img alt="Siburyug Otel Projesi" src="anapa-sanatorium-sibur-yug-7056.jpeg" style="width:100%; max-width:900px; margin:20px auto; display:block; border-radius:8px;"/>
+</li>
+<li><strong>DCC Kompleksi (Gazprom Neft)</strong><br/>
   45 milyon USD bütçeli bu projede kazı, dolgu, borulama ve betonarme imalatlar sahada uygulanmıştır. Test ve devreye alma süreçlerinde doğrudan sorumluluk alınmıştır.</li>
-
-  <li><strong>Toplu Konut Projeleri (Türkiye)</strong><br>
+<li><strong>Toplu Konut Projeleri (Türkiye)</strong><br/>
   Türkiye'de çeşitli bölgelerde gerçekleştirilen konut projelerinde; metraj, teklif hazırlığı, şantiye planlaması ve teknik ofis çalışmaları yürütülmüştür.</li>
 </ul>
-
 <p>Bu deneyimler, Arzeno İnşaat’ın sahip olduğu uluslararası vizyon, saha disiplini ve mühendislik zekasının temel taşlarını oluşturmaktadır.</p>
-
 </main>
 </body>
 </html>

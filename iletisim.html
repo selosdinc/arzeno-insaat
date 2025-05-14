@@ -1,11 +1,12 @@
 
 <!DOCTYPE html>
+
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>İletişim | Arzeno İnşaat</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>İletişim | Arzeno İnşaat</title>
+<style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -86,7 +87,6 @@
       }
     }
     </style>
-
 <style>
 body {
   margin: 0;
@@ -147,8 +147,6 @@ header {
   }
 }
 </style>
-
-
 <script>
 function toggleMenu() {
   const menu = document.getElementById("mobileMenu");
@@ -156,36 +154,83 @@ function toggleMenu() {
 }
 </script>
 
+<style>
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+  }
+  .mobile-menu.show {
+    display: flex;
+  }
+  .mobile-menu a {
+    color: white;
+    font-size: 1.5em;
+    margin: 15px 0;
+    text-decoration: none;
+  }
+  .close-btn {
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+  }
+}
+</style>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("show");
+}
+function closeMenu() {
+  document.getElementById("mobileMenu").classList.remove("show");
+}
+</script>
 </head>
 <body>
-
-  
 <header>
-  <div class="header-container">
-    <img src="logo_arzeno.png" alt="Arzeno Logo" class="logo" />
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-  </div>
-  <nav id="mobileMenu" class="mobile-menu">
-    <a href="index.html">Anasayfa</a>
-    <a href="hakkimizda.html">Hakkımızda</a>
-    <a href="hizmetler.html">Hizmetler</a>
-    <a href="projeler.html">Projeler</a>
-    <a href="iletisim.html">İletişim</a>
-  </nav>
+<div class="header-container">
+<img alt="Arzeno Logo" class="logo" src="logo_arzeno.png"/>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+</div>
+<nav class="mobile-menu" id="mobileMenu">
+<a href="index.html">Anasayfa</a>
+<a href="hakkimizda.html">Hakkımızda</a>
+<a href="hizmetler.html">Hizmetler</a>
+<a href="projeler.html">Projeler</a>
+<a href="iletisim.html">İletişim</a>
+</nav>
 </header>
-
-
-  <main>
-    <h2>📞 İletişim Bilgileri</h2>
-    <p><strong>📍 Adres:</strong> Gözcüler Mah. 8. Sokak, Arsuz / Hatay</p>
-    <p><strong>📱 Telefon 1:</strong> +90 554 182 51 37</p>
-    <p><strong>📱 Telefon 2:</strong> +7 911 748 7776</p>
-    <p><strong>📧 E-posta:</strong> dincselahattin1@gmail.com</p>
-    <p><strong>🕒 Mesai Saatleri:</strong> Hafta içi 09:00 - 18:00</p>
-
-    <h2>📍 Konum</h2>
-    <iframe src="https://www.google.com/maps?q=Gözcüler+Mah.+8.+Sokak,+Arsuz,+Hatay&output=embed" allowfullscreen loading="lazy"></iframe>
-  </main>
-
+<main>
+<h2>📞 İletişim Bilgileri</h2>
+<p><strong>📍 Adres:</strong> Gözcüler Mah. 8. Sokak, Arsuz / Hatay</p>
+<p><strong>📱 Telefon 1:</strong> +90 554 182 51 37</p>
+<p><strong>📱 Telefon 2:</strong> +7 911 748 7776</p>
+<p><strong>📧 E-posta:</strong> dincselahattin1@gmail.com</p>
+<p><strong>🕒 Mesai Saatleri:</strong> Hafta içi 09:00 - 18:00</p>
+<h2>📍 Konum</h2>
+<iframe allowfullscreen="" loading="lazy" src="https://www.google.com/maps?q=Gözcüler+Mah.+8.+Sokak,+Arsuz,+Hatay&amp;output=embed"></iframe>
+</main>
 </body>
 </html>

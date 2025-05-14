@@ -1,11 +1,12 @@
 
 <!DOCTYPE html>
+
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Arzeno İnşaat - Hakkımızda</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arzeno İnşaat - Hakkımızda</title>
+<style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -84,7 +85,6 @@
       }
     }
     </style>
-
 <style>
 body {
   margin: 0;
@@ -145,8 +145,6 @@ header {
   }
 }
 </style>
-
-
 <script>
 function toggleMenu() {
   const menu = document.getElementById("mobileMenu");
@@ -154,52 +152,94 @@ function toggleMenu() {
 }
 </script>
 
+<style>
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+  }
+  .mobile-menu.show {
+    display: flex;
+  }
+  .mobile-menu a {
+    color: white;
+    font-size: 1.5em;
+    margin: 15px 0;
+    text-decoration: none;
+  }
+  .close-btn {
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+  }
+}
+</style>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("show");
+}
+function closeMenu() {
+  document.getElementById("mobileMenu").classList.remove("show");
+}
+</script>
 </head>
 <body>
-  
 <header>
-  <div class="header-container">
-    <img src="logo_arzeno.png" alt="Arzeno Logo" class="logo" />
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-  </div>
-  <nav id="mobileMenu" class="mobile-menu">
-    <a href="index.html">Anasayfa</a>
-    <a href="hakkimizda.html">Hakkımızda</a>
-    <a href="hizmetler.html">Hizmetler</a>
-    <a href="projeler.html">Projeler</a>
-    <a href="iletisim.html">İletişim</a>
-  </nav>
+<div class="header-container">
+<img alt="Arzeno Logo" class="logo" src="logo_arzeno.png"/>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+</div>
+<nav class="mobile-menu" id="mobileMenu">
+<a href="index.html">Anasayfa</a>
+<a href="hakkimizda.html">Hakkımızda</a>
+<a href="hizmetler.html">Hizmetler</a>
+<a href="projeler.html">Projeler</a>
+<a href="iletisim.html">İletişim</a>
+</nav>
 </header>
-
-  <main>
-
+<main>
 <h2>Kurumsal Kimliğimiz</h2>
 <p>Arzeno İnşaat, çağın gereksinimlerini anlayan, mühendislik ve tasarımı işlevsellik ile birleştiren yenilikçi bir inşaat firmasıdır. Kurumsal yapımız, sadece yapı üretmeyi değil; işbirliği, sürdürülebilirlik ve mühendislik etik değerleriyle katma değer oluşturmayı hedefler. Uluslararası standartlarda yönetim sistemiyle ilerleyerek hem yurtiçinde hem yurtdışında örnek projelere imza atmayı amaçlamaktayız.</p>
-
-
-<img src="ChatGPT Image 14 May 2025 21_29_48.png" alt="Endüstriyel tesis fotoğrafı"
-     style="width: 100%; max-width: 900px; margin: 30px auto; display: block; border-radius: 10px;" />
+<img alt="Endüstriyel tesis fotoğrafı" src="ChatGPT Image 14 May 2025 21_29_48.png" style="width: 100%; max-width: 900px; margin: 30px auto; display: block; border-radius: 10px;"/>
 <h2>Kurucumuzun Tecrübesi</h2>
 <p>Şirketimizin kurucusu Selahattin Dinç, Rusya’da 7 yıl boyunca görev aldığı mega projelerde teknik ofis şefi ve proje kontrol uzmanı olarak çalışmıştır. EPC projelerindeki hakimiyeti, saha uygulamaları ve ofis süreçlerini entegre şekilde yönetme becerisiyle tanınır. Endüstriyel tesislerin detaylı mühendislik planlamasından, sahada uygulama aşamalarına kadar edindiği bu derin bilgi, Arzeno İnşaat’ın vizyonuna yön vermektedir.</p>
-
 <h2>Vizyonumuz</h2>
 <p>İnşaat sektöründe fark yaratan, güven temelli ve kalıcı projeler üretmek. Geleceği düşünen, çevreye duyarlı ve teknolojik altyapıya sahip yapılarla sürdürülebilir kalkınmaya katkı sağlamak. Türkiye’nin önde gelen mühendislik firmalarından biri olmayı hedefliyoruz.</p>
-
 <h2>Misyonumuz</h2>
 <p>Müşterilerimize ekonomik, kaliteli ve güvenli çözümler sunarak yüksek memnuniyet sağlamayı amaçlıyoruz. Projelerdeki tüm süreçleri disiplinli, şeffaf ve dinamik şekilde yönetmek ve global mühendislik tecrübemizi yerel çözümlerle birleştirerek fark yaratmak en önemli misyonlarımızdandır.</p>
-
 <h2>Temel Değerlerimiz</h2>
 <ul>
-  <li><strong>Güven:</strong> Her projemizde şeffaflık ve dürüstlük temel ilkedir.</li>
-  <li><strong>Kalite:</strong> Uluslararası standartlara uygun, uzun ömürlü yapılar üretiriz.</li>
-  <li><strong>İnovasyon:</strong> Yeni teknolojilere ve dijital çözümlere entegre oluruz.</li>
-  <li><strong>Sürdürülebilirlik:</strong> Çevreye ve geleceğe karşı sorumluluk bilinciyle hareket ederiz.</li>
-  <li><strong>İnsan Odaklılık:</strong> Hem çalışanlarımızın hem paydaşlarımızın memnuniyetini gözetiriz.</li>
+<li><strong>Güven:</strong> Her projemizde şeffaflık ve dürüstlük temel ilkedir.</li>
+<li><strong>Kalite:</strong> Uluslararası standartlara uygun, uzun ömürlü yapılar üretiriz.</li>
+<li><strong>İnovasyon:</strong> Yeni teknolojilere ve dijital çözümlere entegre oluruz.</li>
+<li><strong>Sürdürülebilirlik:</strong> Çevreye ve geleceğe karşı sorumluluk bilinciyle hareket ederiz.</li>
+<li><strong>İnsan Odaklılık:</strong> Hem çalışanlarımızın hem paydaşlarımızın memnuniyetini gözetiriz.</li>
 </ul>
-
 <h2>Küresel Tecrübe ve Yerel Yaklaşım</h2>
 <p>Arzeno İnşaat, Rusya'daki büyük ölçekli projelerde kazandığı uluslararası tecrübeyi Türkiye’deki projelere başarıyla yansıtmaktadır. Yerel ihtiyaçları doğru analiz ederek, global kalite anlayışıyla harmanlayan firmamız, hem sahada hem teknik ofiste verimlilik sağlar.</p>
-
 </main>
 </body>
 </html>

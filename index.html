@@ -151,7 +151,6 @@ function toggleMenu() {
   menu.classList.toggle("show");
 }
 </script>
-
 <style>
 body {
   margin: 0;
@@ -230,6 +229,60 @@ function toggleMenu() {
   menu.classList.toggle("show");
 }
 </script>
+
+<style>
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+  }
+  .mobile-menu.show {
+    display: flex;
+  }
+  .mobile-menu a {
+    color: white;
+    font-size: 1.5em;
+    margin: 15px 0;
+    text-decoration: none;
+  }
+  .close-btn {
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+  }
+}
+</style>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("show");
+}
+function closeMenu() {
+  document.getElementById("mobileMenu").classList.remove("show");
+}
+</script>
 </head>
 <body>
 <header>
@@ -245,44 +298,38 @@ function toggleMenu() {
 <a href="iletisim.html">İletişim</a>
 </nav>
 </header>
-
 <main>
-  <section style="text-align:center; margin: 30px auto;">
-    <h1 style="font-size: 2em; color: #003366;">Endüstriyel Güç, Mimari Zarafet</h1>
-    <p style="font-size: 1.2em; color: #005599;">Arzeno İnşaat: Kaliteyi güvenle getiriyoruz.</p>
-    <a href="projeler.html" style="background:#003366;color:white;padding:10px 20px;border-radius:6px;text-decoration:none;">Projelerimize Göz Atın</a>
-  </section>
-
-  <section>
-    <img src="Adsız tasarım.gif" alt="Arzeno Gif" style="width: 100%; height: auto; display: block; margin: 30px auto;" />
-  </section>
-
-  <section style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 40px;">
-    <div style="flex: 1 1 250px; margin: 10px; padding: 20px; background-color: #f6f8fa; border-radius: 10px;">
-      <h3>🏗️ Endüstriyel Yapılar</h3>
-      <p>Büyük ölçekli tesis projelerinde mühendislik ve saha becerisiyle A'dan Z'ye çözümler.</p>
-    </div>
-    <div style="flex: 1 1 250px; margin: 10px; padding: 20px; background-color: #f6f8fa; border-radius: 10px;">
-      <h3>🏠 Konut & Güçlendirme</h3>
-      <p>Estetik, işlevsel ve dayanıklı yapılar için tasarım ve uygulama hizmetleri.</p>
-    </div>
-    <div style="flex: 1 1 250px; margin: 10px; padding: 20px; background-color: #f6f8fa; border-radius: 10px;">
-      <h3>📊 EPC & Proje Yönetimi</h3>
-      <p>Bütçe, hakediş, metraj ve süreç takibi konularında uzman EPC desteği.</p>
-    </div>
-  </section>
-
-  <section style="margin: 50px auto; text-align:center;">
-    <h2 style="color: #003366;">Kurucunun Mesajı</h2>
-    <p style="max-width: 700px; margin: auto; font-size: 1.1em;">
+<section style="text-align:center; margin: 30px auto;">
+<h1 style="font-size: 2em; color: #003366;">Endüstriyel Güç, Mimari Zarafet</h1>
+<p style="font-size: 1.2em; color: #005599;">Arzeno İnşaat: Kaliteyi güvenle getiriyoruz.</p>
+<a href="projeler.html" style="background:#003366;color:white;padding:10px 20px;border-radius:6px;text-decoration:none;">Projelerimize Göz Atın</a>
+</section>
+<section>
+<img alt="Arzeno Gif" src="Adsız tasarım.gif" style="width: 100%; height: auto; display: block; margin: 30px auto;"/>
+</section>
+<section style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 40px;">
+<div style="flex: 1 1 250px; margin: 10px; padding: 20px; background-color: #f6f8fa; border-radius: 10px;">
+<h3>🏗️ Endüstriyel Yapılar</h3>
+<p>Büyük ölçekli tesis projelerinde mühendislik ve saha becerisiyle A'dan Z'ye çözümler.</p>
+</div>
+<div style="flex: 1 1 250px; margin: 10px; padding: 20px; background-color: #f6f8fa; border-radius: 10px;">
+<h3>🏠 Konut &amp; Güçlendirme</h3>
+<p>Estetik, işlevsel ve dayanıklı yapılar için tasarım ve uygulama hizmetleri.</p>
+</div>
+<div style="flex: 1 1 250px; margin: 10px; padding: 20px; background-color: #f6f8fa; border-radius: 10px;">
+<h3>📊 EPC &amp; Proje Yönetimi</h3>
+<p>Bütçe, hakediş, metraj ve süreç takibi konularında uzman EPC desteği.</p>
+</div>
+</section>
+<section style="margin: 50px auto; text-align:center;">
+<h2 style="color: #003366;">Kurucunun Mesajı</h2>
+<p style="max-width: 700px; margin: auto; font-size: 1.1em;">
       Yurtdışında gerçekleştirdiğimiz mega projelerle edindiğimiz mühendislik birikimini, şimdi Türkiye’deki yapılarda kaliteyle ve vizyonla inşa etmeye devam ediyoruz.
     </p>
-  </section>
-
-  <section style="text-align:center; margin: 50px auto;">
-    <a href="iletisim.html" style="background:#005599;color:white;padding:12px 28px;font-size:1em;border-radius:6px;text-decoration:none;">Bizimle İletişime Geçin</a>
-  </section>
+</section>
+<section style="text-align:center; margin: 50px auto;">
+<a href="iletisim.html" style="background:#005599;color:white;padding:12px 28px;font-size:1em;border-radius:6px;text-decoration:none;">Bizimle İletişime Geçin</a>
+</section>
 </main>
-
 </body>
 </html>

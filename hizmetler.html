@@ -1,11 +1,12 @@
 
 <!DOCTYPE html>
+
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Arzeno İnşaat - Hizmetler</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arzeno İnşaat - Hizmetler</title>
+<style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -84,7 +85,6 @@
       }
     }
     </style>
-
 <style>
 body {
   margin: 0;
@@ -145,8 +145,6 @@ header {
   }
 }
 </style>
-
-
 <script>
 function toggleMenu() {
   const menu = document.getElementById("mobileMenu");
@@ -154,45 +152,88 @@ function toggleMenu() {
 }
 </script>
 
+<style>
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+  }
+  .mobile-menu.show {
+    display: flex;
+  }
+  .mobile-menu a {
+    color: white;
+    font-size: 1.5em;
+    margin: 15px 0;
+    text-decoration: none;
+  }
+  .close-btn {
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+  }
+}
+</style>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("show");
+}
+function closeMenu() {
+  document.getElementById("mobileMenu").classList.remove("show");
+}
+</script>
 </head>
 <body>
-  
 <header>
-  <div class="header-container">
-    <img src="logo_arzeno.png" alt="Arzeno Logo" class="logo" />
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-  </div>
-  <nav id="mobileMenu" class="mobile-menu">
-    <a href="index.html">Anasayfa</a>
-    <a href="hakkimizda.html">Hakkımızda</a>
-    <a href="hizmetler.html">Hizmetler</a>
-    <a href="projeler.html">Projeler</a>
-    <a href="iletisim.html">İletişim</a>
-  </nav>
+<div class="header-container">
+<img alt="Arzeno Logo" class="logo" src="logo_arzeno.png"/>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+</div>
+<nav class="mobile-menu" id="mobileMenu">
+<a href="index.html">Anasayfa</a>
+<a href="hakkimizda.html">Hakkımızda</a>
+<a href="hizmetler.html">Hizmetler</a>
+<a href="projeler.html">Projeler</a>
+<a href="iletisim.html">İletişim</a>
+</nav>
 </header>
-
-  <main>
-
+<main>
 <h2>Hizmetlerimiz</h2>
-
 <h3>🏗️ Endüstriyel Yapılar ve EPC Projeleri</h3>
 <p>Rafineriler, enerji santralleri, petrokimya tesisleri gibi yüksek ölçekli projelerde mühendislik, malzeme temini ve uygulama (EPC) hizmetleri sunuyoruz. Sahadaki uygulama tecrübemiz ile ofisteki teknik disiplini birleştirerek güvenli, sürdürülebilir ve verimli yapılar inşa ediyoruz.</p>
-
 <h3>🏠 Konut, Karma Yaşam Alanları ve Güçlendirme İşleri</h3>
 <p>Modern mimari anlayışla tasarlanmış konut ve karma yaşam projelerinde estetik, işlevsellik ve mühendislik çözümlerini entegre ediyoruz. Ayrıca mevcut yapıların güçlendirilmesi, tamirat, tadilat ve yenileme işlerinde de anahtar teslim çözümler sunuyoruz.</p>
-
 <h3>🛠️ Mekanik Borulama ve Çelik Konstrüksiyon</h3>
 <p>Tesis içi proses borulama, altyapı sistemleri, yangın tesisatları, destek çelik yapılar ve ekipman montajı konusunda uzman ekiplerimizle hizmet veriyoruz. Ağır sanayi ve endüstriyel yapılarda mekanik altyapı çözümlerimizle öne çıkıyoruz.</p>
-
 <h3>📊 Proje Yönetimi ve Teknik Ofis Hizmetleri</h3>
 <p>Metraj, keşif, bütçeleme, teklif paketi hazırlama, hakediş ve sözleşme yönetimi gibi teknik ofis hizmetlerinde uluslararası EPC projelerindeki tecrübemizi aktarıyoruz. Tüm süreçleri detaylı şekilde takip ederek, projenin zamanında ve kontrollü ilerlemesini sağlıyoruz.</p>
-
 <h3>🔌 Elektrik Sistemleri ve Enerji Altyapısı</h3>
 <p>Orta ve alçak gerilim sistemleri, trafo merkezleri, kablolama, pano montajı ve test-devreye alma süreçlerinde proje bazlı mühendislik çözümleri sunuyoruz. Enerji altyapısını güvenli ve sürdürülebilir şekilde kuruyoruz.</p>
-
 <h3>📋 Mühendislik ve Danışmanlık</h3>
 <p>Sahada karşılaşılan teknik problemlere çözüm odaklı yaklaşımımızla destek sunuyor, kalite kontrol, verimlilik analizleri, alt yüklenici yönetimi ve teknik raporlama gibi konularda danışmanlık veriyoruz.</p>
-
 </main>
 </body>
 </html>
