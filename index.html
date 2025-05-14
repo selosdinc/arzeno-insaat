@@ -2,135 +2,82 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arzeno İnşaat</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to bottom, #0f1e38, #24395c);
-            color: white;
-        }
-        header {
-            background-color: #0f1e38;
-            padding: 20px;
-            text-align: center;
-        }
-        header img {
-            max-width: 180px;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h2 {
-            border-bottom: 1px solid #fff;
-            padding-bottom: 10px;
-        }
-        .icon {
-            margin-right: 10px;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 4px;
-        }
-        .contact-form button {
-            padding: 10px 20px;
-            background-color: #ffa500;
-            border: none;
-            color: #000;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        @media (max-width: 600px) {
-            body {
-                font-size: 16px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arzeno İnşaat - Anasayfa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: white;
+      color: #003366;
+    }
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo img {
+      height: 80px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ff6600;
+    }
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2, h3 {
+      color: #003366;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 6px;
+    }
+    p, ul {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-
-<header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Arzeno_Logo_Sample.svg/2560px-Arzeno_Logo_Sample.svg.png" alt="Arzeno Logo">
-</header>
-
-
-<section>
-    <h2>Hakkımızda</h2>
-    <p><strong>Arzeno İnşaat</strong>, genç, dinamik ve vizyoner bir yapılanma olarak, uluslararası arenada edinilen güçlü mühendislik tecrübesini Türkiye’ye taşıyan bir inşaat firmasıdır.</p>
-    <p>Kurucumuz Selahattin Dinç, 7 yılı aşkın süre boyunca Rusya’da, milyar dolarlık endüstriyel projelerde teknik ofis şefi ve proje kontrol uzmanı olarak görev almış, birçok karmaşık ve büyük ölçekli yapının planlama, uygulama ve bütçe yönetimini başarıyla yürütmüştür.</p>
-    <p>Bu uluslararası tecrübe, Arzeno İnşaat’ın temel DNA’sını oluşturur: Hızlı karar alma, analitik düşünme, saha ile teknik arasındaki dengeyi kurma ve sonuç odaklılık.</p>
-    <p>Adını, Akdeniz’in sıcak karakteriyle, İtalyanca’nın zarif ve prestijli tınısından alan Arzeno, hem endüstriyel yapılar hem de konut projelerinde yenilikçi ve sürdürülebilir çözümler sunar.</p>
-    <p>Arzeno İnşaat, genç enerjisini tecrübe ile birleştirerek, sadece yapılar değil; değer, güven ve uzun soluklu iş ortaklıkları inşa etmeyi hedefler.</p>
-</section>
-
-
-
-<section>
-    <h2>Hizmetlerimiz</h2>
-
-    <h3>🏗️ Endüstriyel Yapı Projeleri</h3>
-    <p>Arzeno İnşaat; rafineri, petrokimya tesisleri, enerji santralleri ve üretim hatları gibi büyük ölçekli projelerde mühendislik, malzeme temini ve uygulama (EPC) süreçlerini tek çatı altında yürütür. Sahadaki deneyimimizi teknik disiplinle birleştirerek sürdürülebilir ve güvenilir yapılar üretiriz.</p>
-
-    <h3>🏠 Konut Projeleri ve Yapı Taahhüdü</h3>
-    <p>Karma yaşam alanlarından konut projelerine kadar; mimari tasarım, yapı üretimi ve anahtar teslim çözümler sunarız. Estetik, işlevsellik ve mühendislik disiplinini bir araya getirerek yaşanabilir yapılar inşa ederiz.</p>
-
-    <h3>🧠 Proje Yönetimi ve Teknik Ofis Hizmetleri</h3>
-    <p>Uluslararası tecrübeye sahip kadromuzla, bütçeleme, metraj, hakediş, teklif hazırlığı ve süreç takibi gibi tüm teknik ofis hizmetlerini yönetiriz. Projelerin verimli, zamanında ve kontrollü ilerlemesi için tüm mühendislik süreçlerini entegre ederiz.</p>
-
-    <h3>🛠️ Mühendislik ve Danışmanlık</h3>
-    <p>Alt yüklenici yönetimi, sözleşme analizi, kalite kontrol, verimlilik raporları ve sahadaki teknik uygulamalar için çözüm odaklı mühendislik danışmanlığı sunarız.</p>
-</section>
-
-
-
-<section>
-    <h2>Projeler</h2>
-    <p><strong>Kurucumuz Selahattin Dinç’in yönettiği ve katkı sağladığı projelerden bazıları:</strong></p>
-
-    <h3>🏭 Amur Gaz Kimya Kompleksi – Rusya</h3>
-    <p><em>Amur – 2023-2024</em><br>
-    $1 milyar bütçeli bu projede teknik ofis şefi olarak görev alınmıştır. EPC süreçleri, malzeme temini, planlama, bütçeleme ve iş programı yönetimi başarıyla yürütülmüştür.</p>
-
-    <h3>🔥 Severstal Yüksek Fırın Projesi – Rusya</h3>
-    <p><em>Cherepovets – 2024</em><br>
-    $100 milyon bütçeli endüstriyel yapıda; mekanik, çelik ve elektrik işlerinin takibi, fiziki ilerleme raporları ve sözleşme analizleri koordine edilmiştir.</p>
-
-    <h3>🛢️ GEMONT Neft / Technip – Omsk Rafineri Projesi</h3>
-    <p><em>Omsk – 2019-2023</em><br>
-    $120 milyonluk birincil petrol rafinerisi ve gecikmeli kok ünitesinde saha mühendisliği, hakedişler, metrajlar, kalite raporlamaları ve alt yüklenici yönetimi üstlenilmiştir.</p>
-
-    <h3>🏗️ DCC Kompleksi – Omsk, Rusya</h3>
-    <p><em>2018-2019</em><br>
-    $45 milyon bütçeli bu projede kazı, dolgu, betonarme yapı ve borulama faaliyetleri saha mühendisi olarak yönetilmiştir.</p>
-
-    <h3>🏨 Sibur Otel Kompleksi – Anapa, Rusya</h3>
-    <p><em>2024 – Devam Ediyor</em><br>
-    $120 milyonluk otel yapısında; teknik ofis, bütçe kontrol, metraj, taşeron koordinasyonu ve ilerleme takibi gibi çok sayıda yönetim süreci yürütülmektedir.</p>
-
-    <p><em>Not: Bu projeler, Arzeno İnşaat’ın kurucusu Selahattin Dinç’in geçmişte görev aldığı projelerdir. Arzeno İnşaat, bu değerli tecrübe ile yeni projelere yön vermektedir.</em></p>
-</section>
-
-
-<section>
-    <h2>İletişim</h2>
-    <p>📍 Arsuz / Hatay</p>
-    <p>📱 +90 554 182 51 37</p>
-    <p>📧 <a href="mailto:dincselahattin1@gmail.com" style="color: #ffa500;">dincselahattin1@gmail.com</a></p>
-    
-    <div class="contact-form">
-        <input type="text" placeholder="Adınız Soyadınız">
-        <input type="email" placeholder="E-posta Adresiniz">
-        <textarea rows="5" placeholder="Mesajınız"></textarea>
-        <button>Gönder</button>
+  <header>
+    <div class="logo">
+      <img src="logo_arzeno.png" alt="Arzeno İnşaat Logosu" />
     </div>
-</section>
+    <nav>
+      <a href="index.html">Anasayfa</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="hizmetler.html">Hizmetler</a>
+      <a href="projeler.html">Projeler</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </header>
+  <main>
+    
+<h2>Hoş Geldiniz</h2>
+<p>Arzeno İnşaat, kalite ve mühendisliği birleştirerek modern yapılar inşa eder.</p>
+<img src="Adsız tasarım.gif" alt="Animasyonlu Logo" style="width: 100%; max-width: 900px; aspect-ratio: 2.5 / 1; object-fit: cover; border-radius: 10px; display: block; margin: 0 auto;" />
 
+  
+    <footer style="text-align: center; padding: 20px; font-size: 0.9em; color: #777;">
+      © 2025 Arzeno İnşaat. Tüm hakları saklıdır.
+    </footer>
+  </main>
 </body>
 </html>
