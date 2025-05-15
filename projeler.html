@@ -151,61 +151,32 @@ function toggleMenu() {
   menu.classList.toggle("show");
 }
 </script>
-
 <style>
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    position: absolute;
-    right: 25px;
-    top: 25px;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 1001;
-  }
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0,0,0,0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1000;
-  }
-  .mobile-menu.show {
-    display: flex;
-  }
-  .mobile-menu a {
-    color: white;
-    font-size: 1.5em;
-    margin: 15px 0;
-    text-decoration: none;
-  }
-  .close-btn {
-    font-size: 30px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-    cursor: pointer;
-  }
+    body {
+        font-size: 80%;
+        padding: 10px;
+    }
+    section, .content, .container, .box {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    h2, h3 {
+        font-size: 1.1em;
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        margin: 15px auto;
+    }
 }
-</style>
-
-<script>
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("show");
-}
-function closeMenu() {
-  document.getElementById("mobileMenu").classList.remove("show");
-}
-</script>
-</head>
+</style></head>
 <body>
 <header>
 <div class="header-container">
