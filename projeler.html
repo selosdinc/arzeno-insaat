@@ -1,281 +1,177 @@
-
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="tr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Arzeno İnşaat - Projeler</title>
-<style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: white;
-      color: #003366;
-    }
-    header {
-      background-color: #ffffff;
-      border-bottom: 1px solid #ddd;
-      padding: 15px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .logo img {
-      height: 80px;
-    }
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #003366;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #ff6600;
-    }
-    main {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2, h3 {
-      color: #003366;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 6px;
-    }
-    p, ul {
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deneyim | Arzeno Proje Kontrol ve Danışmanlık</title>
+  <meta name="description" content="Petrokimya, rafineri, ağır sanayi, enerji ve karma yapılardaki uluslararası EPC proje kontrol ve teknik ofis deneyimi.">
+  <meta name="theme-color" content="#061724">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://arzeno.tr/projeler.html">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
   
-    img, iframe {
-      max-width: 100%;
-      height: auto;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-      }
-
-      nav {
-        width: 100%;
-        margin-top: 10px;
-      }
-
-      nav a {
-        display: block;
-        margin: 10px 0;
-        font-size: 1.1em;
-      }
-
-      main {
-        padding: 20px;
-        width: 100%;
-        box-sizing: border-box;
-      }
-    }
-    </style>
-<style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-}
-header {
-  background-color: #fff;
-  padding: 15px 20px;
-  border-bottom: 1px solid #ccc;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  height: 80px;
-}
-.hamburger {
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-}
-.mobile-menu {
-  display: flex;
-  gap: 20px;
-  justify-content: flex-end;
-}
-.mobile-menu a {
-  text-decoration: none;
-  color: #003366;
-  font-weight: bold;
-}
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border: 1px solid #ddd;
-    padding: 10px;
-    width: 200px;
-  }
-  .mobile-menu a {
-    padding: 10px 0;
-  }
-  .mobile-menu.show {
-    display: flex;
-  }
-}
-</style>
-<script>
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("show");
-}
-</script>
-<style>
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    position: absolute;
-    right: 25px;
-    top: 25px;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 1001;
-  }
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0,0,0,0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1000;
-  }
-  .mobile-menu.show {
-    display: flex;
-  }
-  .mobile-menu a {
-    color: white;
-    font-size: 1.5em;
-    margin: 15px 0;
-    text-decoration: none;
-  }
-  .close-btn {
-    font-size: 30px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-    cursor: pointer;
-  }
-}
-</style>
-<script>
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("show");
-}
-function closeMenu() {
-  document.getElementById("mobileMenu").classList.remove("show");
-}
-</script>
-<style>
-@media (max-width: 768px) {
-  main {
-    padding: 15px;
-  }
-  p, li {
-    font-size: 0.9em;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: justify;
-  }
-  h2, h3 {
-    font-size: 1.2em;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-}
-</style>
-
-<style>
-@media (max-width: 768px) {
-  body {
-    font-size: 80%;
-  }
-  p, li {
-    font-size: 0.9em;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: justify;
-  }
-  h2, h3 {
-    font-size: 1.1em;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-}
-</style>
-</head>
-<body>
-<header>
-<div class="header-container">
-<img alt="Arzeno Logo" class="logo" src="logo_arzeno.png"/>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
-</div>
-<nav class="mobile-menu" id="mobileMenu">
-<a href="index.html">Anasayfa</a>
-<a href="hakkimizda.html">Hakkımızda</a>
-<a href="hizmetler.html">Hizmetler</a>
-<a href="projeler.html">Projeler</a>
-<a href="iletisim.html">İletişim</a>
-</nav>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="Arzeno">
+  <meta property="og:title" content="Deneyim | Arzeno Proje Kontrol ve Danışmanlık">
+  <meta property="og:description" content="Petrokimya, rafineri, ağır sanayi, enerji ve karma yapılardaki uluslararası EPC proje kontrol ve teknik ofis deneyimi.">
+  <meta property="og:url" content="https://arzeno.tr/projeler.html">
+  <meta property="og:image" content="https://arzeno.tr/assets/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Deneyim | Arzeno Proje Kontrol ve Danışmanlık">
+  <meta name="twitter:description" content="Petrokimya, rafineri, ağır sanayi, enerji ve karma yapılardaki uluslararası EPC proje kontrol ve teknik ofis deneyimi.">
+  <meta name="twitter:image" content="https://arzeno.tr/assets/img/og-cover.jpg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Arzeno Proje Kontrol ve Danışmanlık", "alternateName": "Arzeno", "url": "https://arzeno.tr/", "logo": "https://arzeno.tr/assets/img/arzeno-wordmark-navy.png", "image": "https://arzeno.tr/assets/img/og-cover.jpg", "description": "Planlama, maliyet kontrolü, ilerleme ölçümü, yönetim raporlaması ve claim desteği sunan proje kontrol danışmanlığı.", "email": "arzenoinsaat@gmail.com", "telephone": "+90 554 182 51 37", "areaServed": {"@type": "Country", "name": "Türkiye"}, "address": {"@type": "PostalAddress", "addressLocality": "Arsuz", "addressRegion": "Hatay", "addressCountry": "TR"}, "serviceType": ["Proje kontrol danışmanlığı", "Planlama ve iş programı yönetimi", "Bütçe ve maliyet kontrolü", "İlerleme ve performans ölçümü", "Claim ve gecikme analizi", "Teknik ofis sistem kurulumu"]}</script>
+</head><body>
+<a class="skip-link" href="#main-content">Ana içeriğe geç</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Arzeno anasayfa">
+      <img class="brand-wordmark" src="assets/img/arzeno-wordmark-navy.png" width="760" height="392" alt="Arzeno">
+      <span class="brand-copy">
+        <strong>Project Controls</strong>
+        <span>Proje Kontrol &amp; Danışmanlık</span>
+      </span>
+    </a>
+    <nav class="site-nav" id="primary-navigation" aria-label="Ana menü">
+        <a class="nav-link" href="index.html">Anasayfa</a>
+        <a class="nav-link" href="hizmetler.html">Hizmetler</a>
+        <a class="nav-link" href="calisma-modeli.html">Çalışma Modeli</a>
+        <a class="nav-link" href="projeler.html" aria-current="page">Deneyim</a>
+        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+        <a class="nav-link" href="iletisim.html">İletişim</a>
+        <a class="btn btn--accent nav-mobile-cta" href="iletisim.html#proje-brifi">Projenizi konuşalım <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+    </nav>
+    <a class="btn btn--sm header-cta" href="iletisim.html#proje-brifi">Projenizi konuşalım <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Menüyü aç"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
 </header>
-<main>
-<h2>Gerçekleştirilen Proje Deneyimleri</h2>
-<p>Aşağıda yer alan projeler, Arzeno İnşaat kurucusunun yurtiçi ve yurtdışında edindiği doğrudan proje deneyimlerini yansıtmaktadır. Bu projeler şirketin değil, kurucunun geçmişte bireysel olarak görev aldığı çalışmaları kapsamaktadır.</p>
-<ul>
-<li><strong>Amur Gaz Kimya Kompleksi (AGCC)</strong><br/>
-  1 milyar USD bütçeli Rusya’nın en büyük petrokimya projelerinden biridir. Kurucu, teknik ofis şefi olarak görev almış; bütçe hazırlığı, iş gücü ve maliyet analizleri, hakediş ve saha koordinasyonunu yürütmüştür. Ayrıca proses borulama, inşaat, mekanik, elektrik ve altyapı işlerine yönelik saha uygulamaları ve teknik ofis çalışmaları incelenmiştir.<br/><img alt="Amur Gaz Kimya Kompleksi" src="1205-gkhk.png" style="width:100%; max-width:900px; margin:20px auto; display:block; border-radius:8px;"/>
-</li>
-<li><strong>Omsk Ham Petrol Damıtma ve Vakumlama Ünitesi</strong><br/>
-  120 milyon USD bütçeli projede; çelik yapı, betonarme, borulama ve ekipman montaj işleri kapsamında sahada aktif görev alınmıştır. Teknik ofis koordinasyonu ve saha mühendisliği görevleri bir arada yürütülmüş, çok disiplinli imalatlar takip edilmiştir.<br/><img alt="Omsk Ünitesi" src="799e13aca9ddd41cc3bcccb214edbd7b.jpeg" style="width:100%; max-width:900px; margin:20px auto; display:block; border-radius:8px;"/>
-</li>
-<li><strong>Severstal Sıcak Fırın Projesi</strong><br/>
-  100 milyon USD bütçeli endüstriyel projede teknik ofis operasyonları, alt yüklenici sözleşmeleri, ilerleme raporlamaları ve proje kontrol süreçlerinde görev alınmıştır.</li>
-<li><strong>Siburyug Otel Projesi</strong><br/>
-  Cephe, çelik, iç mimari ve altyapı işlerini kapsayan 120 milyon USD’lik projede, teklif süreçlerinden sahadaki uygulamalara kadar tüm teknik ofis yönetimi üstlenilmiştir.<br/><img alt="Siburyug Otel Projesi" src="anapa-sanatorium-sibur-yug-7056.jpeg" style="width:100%; max-width:900px; margin:20px auto; display:block; border-radius:8px;"/>
-</li>
-<li><strong>DCC Kompleksi (Gazprom Neft)</strong><br/>
-  45 milyon USD bütçeli bu projede kazı, dolgu, borulama ve betonarme imalatlar sahada uygulanmıştır. Test ve devreye alma süreçlerinde doğrudan sorumluluk alınmıştır.</li>
-<li><strong>Toplu Konut Projeleri (Türkiye)</strong><br/>
-  Türkiye'de çeşitli bölgelerde gerçekleştirilen konut projelerinde; metraj, teklif hazırlığı, şantiye planlaması ve teknik ofis çalışmaları yürütülmüştür.</li>
-</ul>
-<p>Bu deneyimler, Arzeno İnşaat’ın sahip olduğu uluslararası vizyon, saha disiplini ve mühendislik zekasının temel taşlarını oluşturmaktadır.</p>
+<div class="menu-backdrop" aria-hidden="true"></div>
+<main id="main-content">
+  <section class="page-hero">
+  <div class="container page-hero-inner">
+    <div>
+      <nav class="breadcrumb" aria-label="Sayfa yolu"><a href="index.html">Arzeno</a><span>/</span><span>Deneyim</span></nav>
+      <p class="eyebrow">Proje Kontrol &amp; Danışmanlık</p>
+      <h1>Farklı sektörlerde aynı temel soru: Proje gerçekten nereye gidiyor?</h1>
+      <p class="lead">Arzeno’nun danışmanlık yaklaşımı, çok disiplinli EPC projelerinde sahayla iç içe edinilmiş teknik ofis ve proje kontrol deneyimine dayanır.</p>
+    </div>
+    <aside class="page-hero-aside">
+      <strong>Şeffaflık Notu</strong>
+      <p>Bu sayfa şirket referans listesi değil; kurucunun önceki işverenleri bünyesinde edindiği profesyonel proje deneyimini gösterir.</p>
+    </aside>
+  </div>
+</section>
+
+  <section class="section">
+    <div class="container">
+      <div class="disclaimer reveal"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><div><strong>Referansların doğru konumlandırılması</strong><p>Aşağıdaki çalışmalar Arzeno’nun ana yüklenici veya alt yüklenici olarak gerçekleştirdiği projeler değildir. Selahattin Dinç’in önceki işverenleri bünyesinde görev aldığı proje ortamlarını ve edindiği bireysel uzmanlık deneyimini ifade eder.</p></div></div>
+      <div class="section-heading" style="margin-top:70px"><div><p class="eyebrow">Profesyonel Proje Geçmişi</p><h2>Endüstriyel sahadan yönetim raporuna uzanan deneyim.</h2></div><p class="lead">Teknik ofis, planlama, maliyet, hakediş, alt yüklenici, sözleşme ve saha koordinasyonunun birlikte yürütüldüğü proje ortamları.</p></div>
+      <div class="experience-grid">
+        <article class="experience-card experience-card--wide reveal"><img src="assets/img/experience-amur.webp" width="1200" height="720" alt="Geniş ölçekli petrokimya tesisi şantiyesi" loading="lazy"><div class="experience-content"><div class="experience-meta"><span>Petrokimya</span><span>Rusya</span><span>EPC</span></div><h3>Amur Gaz Kimya Kompleksi</h3><p>Teknik ofis ve proje kontrol yönetimi; bütçe, adam-saat, hakediş, maliyet analizi, çok disiplinli ilerleme ve saha koordinasyonu deneyimi.</p></div></article>
+        <article class="experience-card reveal"><img src="assets/img/experience-omsk.webp" width="1200" height="720" alt="Rafineri ve endüstriyel tesis görünümü" loading="lazy"><div class="experience-content"><div class="experience-meta"><span>Rafineri</span><span>Rusya</span></div><h3>Omsk CDU / VDU Ünitesi</h3><p>Betonarme, çelik, borulama ve ekipman montajını kapsayan çok disiplinli saha ve teknik ofis koordinasyonu.</p></div></article>
+        <article class="experience-card reveal"><img src="assets/img/experience-winter.webp" width="1200" height="720" alt="Kış koşullarında büyük endüstriyel tesis" loading="lazy"><div class="experience-content"><div class="experience-meta"><span>Ağır Sanayi</span><span>Teknik Ofis</span></div><h3>Severstal Sıcak Fırın Projesi</h3><p>İlerleme raporlaması, alt yüklenici ve sözleşme takibi, teknik ofis operasyonları ve proje kontrol süreçleri.</p></div></article>
+        <article class="experience-card reveal"><img src="assets/img/experience-anapa.webp" width="1200" height="720" alt="Karma kullanım ve otel kompleksi havadan görünüm" loading="lazy"><div class="experience-content"><div class="experience-meta"><span>Karma Yapı</span><span>Rusya</span></div><h3>Siburyug Otel ve Kompleks Projesi</h3><p>Cephe, çelik, iç mimari ve altyapı işlerinde teklif, metraj, hakediş ve teknik ofis yönetimi.</p></div></article>
+        <article class="experience-card reveal"><img src="assets/img/experience-industrial.webp" width="1200" height="720" alt="Çok disiplinli proses tesisi" loading="lazy"><div class="experience-content"><div class="experience-meta"><span>Enerji</span><span>Endüstriyel</span></div><h3>Enerji ve Proses Tesisleri</h3><p>Çelik, betonarme, gömülü eleman, borulama, çatı ve tamamlayıcı işler dahil saha–teknik ofis entegrasyonu.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--muted">
+    <div class="container">
+      <div class="section-heading"><div><p class="eyebrow">Sektörel Yetkinlik</p><h2>Proje türü değişir; kontrol mantığı değişmez.</h2></div><p class="lead">Her sektörde sözleşme, ölçüm ve risk yapısı farklıdır. Ancak güvenilir program, maliyet tahmini ve kayıt disiplini her projede ortak ihtiyaçtır.</p></div>
+      <div class="sector-strip">
+        <div class="sector-item reveal"><span>01</span><strong>Petrokimya &amp; Gaz Kimya</strong></div>
+        <div class="sector-item reveal"><span>02</span><strong>Rafineri &amp; Proses Üniteleri</strong></div>
+        <div class="sector-item reveal"><span>03</span><strong>Ağır Sanayi &amp; Çelik</strong></div>
+        <div class="sector-item reveal"><span>04</span><strong>Enerji &amp; Nükleer Yapılar</strong></div>
+        <div class="sector-item reveal"><span>05</span><strong>Karma Yapı &amp; Konaklama</strong></div>
+        <div class="sector-item reveal"><span>06</span><strong>Altyapı &amp; Endüstriyel İnşaat</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink">
+    <div class="container about-split">
+      <div><p class="eyebrow">Deneyimin Danışmanlığa Dönüşümü</p><h2>Masadan sahaya, sahadan yönetime.</h2></div>
+      <div class="prose"><p>Arzeno’nun farkı yalnızca rapor üretme becerisi değildir. Planlanan işin sahada nasıl üretildiğini, metrajın hakedişe nasıl dönüştüğünü, adam-saatin maliyeti nasıl etkilediğini ve sözleşme kaydının claim değerini nasıl belirlediğini birlikte ele alır.</p><p>Bu nedenle danışmanlık kapsamı; tek bir tablo veya yazılım çıktısı yerine, proje ekibinin kullanabileceği sürdürülebilir bir kontrol sistemine odaklanır.</p><div class="tag-row" style="margin-top:24px"><span class="pill pill--dark">Saha gerçekliği</span><span class="pill pill--dark">Teknik ofis disiplini</span><span class="pill pill--dark">Yönetim görünürlüğü</span><span class="pill pill--dark">Kayıt kültürü</span></div></div>
+    </div>
+  </section>
+  <section class="section section--compact">
+  <div class="container">
+    <div class="cta-panel reveal">
+      <div class="cta-copy">
+        <p class="eyebrow">İlk Adım</p>
+        <h2>Projenizin sektörü farklı olabilir; kontrol ihtiyacı tanıdıktır.</h2>
+        <p>Program, maliyet veya ilerleme verinizden küçük bir örnek paylaşın. Mevcut yapının hangi noktada değer kaybettiğini birlikte değerlendirelim.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn--accent" href="iletisim.html#proje-brifi">Proje brifi oluştur <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+        <a class="btn btn--ghost-light" href="tel:+905541825137">Telefonla görüş</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Arzeno anasayfa">
+          <img class="brand-wordmark" src="assets/img/arzeno-wordmark-white.png" width="760" height="392" alt="Arzeno">
+          <span class="brand-copy">
+            <strong>Project Controls</strong>
+            <span>Proje Kontrol &amp; Danışmanlık</span>
+          </span>
+        </a>
+        <p class="footer-intro">Orta ölçekli projelere; tam zamanlı departman yükü olmadan planlama, maliyet, ilerleme, raporlama ve claim disiplini kazandırır.</p>
+        <div class="tag-row">
+          <span class="pill pill--dark">Uzaktan</span>
+          <span class="pill pill--dark">Hibrit</span>
+          <span class="pill pill--dark">Sahada</span>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Hızlı Erişim</h3>
+        <ul class="footer-links">
+          <li><a href="hizmetler.html">Hizmetler</a></li>
+          <li><a href="calisma-modeli.html">Çalışma Modeli</a></li>
+          <li><a href="projeler.html">Sektörel Deneyim</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Uzmanlık</h3>
+        <ul class="footer-links">
+          <li><a href="hizmetler.html#planlama">Planlama &amp; Scheduling</a></li>
+          <li><a href="hizmetler.html#maliyet">Bütçe &amp; Maliyet Kontrolü</a></li>
+          <li><a href="hizmetler.html#ilerleme">İlerleme &amp; EVM</a></li>
+          <li><a href="hizmetler.html#claim">Claim &amp; Gecikme</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>İletişim</h3>
+        <ul class="footer-links">
+          <li><a href="tel:+905541825137">+90 554 182 51 37</a></li>
+          <li><a href="mailto:arzenoinsaat@gmail.com">arzenoinsaat@gmail.com</a></li>
+          <li><span>Arsuz, Hatay • Türkiye</span></li>
+          <li><a href="iletisim.html#proje-brifi">Proje brifi oluştur</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Arzeno. Tüm hakları saklıdır.</span>
+      <div class="footer-bottom-links">
+        <a href="gizlilik.html">Gizlilik</a>
+        <a href="sitemap.xml">Site Haritası</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>

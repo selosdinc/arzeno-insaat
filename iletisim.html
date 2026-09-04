@@ -1,236 +1,168 @@
-
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="tr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>İletişim | Arzeno İnşaat</title>
-<style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: white;
-      color: #003366;
-    }
-    header {
-      background-color: #ffffff;
-      border-bottom: 1px solid #ddd;
-      padding: 15px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .logo img {
-      height: 80px;
-    }
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #003366;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #ff6600;
-    }
-    main {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2 {
-      color: #0f1e38;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 6px;
-    }
-    p {
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-    iframe {
-      width: 100%;
-      height: 400px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>İletişim | Arzeno Proje Kontrol ve Danışmanlık</title>
+  <meta name="description" content="Projeniz için planlama, maliyet kontrolü, ilerleme, raporlama veya claim desteği hakkında Arzeno ile iletişime geçin.">
+  <meta name="theme-color" content="#061724">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://arzeno.tr/iletisim.html">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
   
-    img, iframe {
-      max-width: 100%;
-      height: auto;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-      }
-
-      nav {
-        width: 100%;
-        margin-top: 10px;
-      }
-
-      nav a {
-        display: block;
-        margin: 10px 0;
-        font-size: 1.1em;
-      }
-
-      main {
-        padding: 20px;
-        width: 100%;
-        box-sizing: border-box;
-      }
-    }
-    </style>
-<style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-}
-header {
-  background-color: #fff;
-  padding: 15px 20px;
-  border-bottom: 1px solid #ccc;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  height: 80px;
-}
-.hamburger {
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-}
-.mobile-menu {
-  display: flex;
-  gap: 20px;
-  justify-content: flex-end;
-}
-.mobile-menu a {
-  text-decoration: none;
-  color: #003366;
-  font-weight: bold;
-}
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border: 1px solid #ddd;
-    padding: 10px;
-    width: 200px;
-  }
-  .mobile-menu a {
-    padding: 10px 0;
-  }
-  .mobile-menu.show {
-    display: flex;
-  }
-}
-</style>
-<script>
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("show");
-}
-</script>
-
-<style>
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    position: absolute;
-    right: 25px;
-    top: 25px;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 1001;
-  }
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0,0,0,0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1000;
-  }
-  .mobile-menu.show {
-    display: flex;
-  }
-  .mobile-menu a {
-    color: white;
-    font-size: 1.5em;
-    margin: 15px 0;
-    text-decoration: none;
-  }
-  .close-btn {
-    font-size: 30px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-    cursor: pointer;
-  }
-}
-</style>
-
-<script>
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("show");
-}
-function closeMenu() {
-  document.getElementById("mobileMenu").classList.remove("show");
-}
-</script>
-</head>
-<body>
-<header>
-<div class="header-container">
-<img alt="Arzeno Logo" class="logo" src="logo_arzeno.png"/>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
-</div>
-<nav class="mobile-menu" id="mobileMenu">
-<a href="index.html">Anasayfa</a>
-<a href="hakkimizda.html">Hakkımızda</a>
-<a href="hizmetler.html">Hizmetler</a>
-<a href="projeler.html">Projeler</a>
-<a href="iletisim.html">İletişim</a>
-</nav>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="Arzeno">
+  <meta property="og:title" content="İletişim | Arzeno Proje Kontrol ve Danışmanlık">
+  <meta property="og:description" content="Projeniz için planlama, maliyet kontrolü, ilerleme, raporlama veya claim desteği hakkında Arzeno ile iletişime geçin.">
+  <meta property="og:url" content="https://arzeno.tr/iletisim.html">
+  <meta property="og:image" content="https://arzeno.tr/assets/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="İletişim | Arzeno Proje Kontrol ve Danışmanlık">
+  <meta name="twitter:description" content="Projeniz için planlama, maliyet kontrolü, ilerleme, raporlama veya claim desteği hakkında Arzeno ile iletişime geçin.">
+  <meta name="twitter:image" content="https://arzeno.tr/assets/img/og-cover.jpg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Arzeno Proje Kontrol ve Danışmanlık", "alternateName": "Arzeno", "url": "https://arzeno.tr/", "logo": "https://arzeno.tr/assets/img/arzeno-wordmark-navy.png", "image": "https://arzeno.tr/assets/img/og-cover.jpg", "description": "Planlama, maliyet kontrolü, ilerleme ölçümü, yönetim raporlaması ve claim desteği sunan proje kontrol danışmanlığı.", "email": "arzenoinsaat@gmail.com", "telephone": "+90 554 182 51 37", "areaServed": {"@type": "Country", "name": "Türkiye"}, "address": {"@type": "PostalAddress", "addressLocality": "Arsuz", "addressRegion": "Hatay", "addressCountry": "TR"}, "serviceType": ["Proje kontrol danışmanlığı", "Planlama ve iş programı yönetimi", "Bütçe ve maliyet kontrolü", "İlerleme ve performans ölçümü", "Claim ve gecikme analizi", "Teknik ofis sistem kurulumu"]}</script>
+</head><body>
+<a class="skip-link" href="#main-content">Ana içeriğe geç</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Arzeno anasayfa">
+      <img class="brand-wordmark" src="assets/img/arzeno-wordmark-navy.png" width="760" height="392" alt="Arzeno">
+      <span class="brand-copy">
+        <strong>Project Controls</strong>
+        <span>Proje Kontrol &amp; Danışmanlık</span>
+      </span>
+    </a>
+    <nav class="site-nav" id="primary-navigation" aria-label="Ana menü">
+        <a class="nav-link" href="index.html">Anasayfa</a>
+        <a class="nav-link" href="hizmetler.html">Hizmetler</a>
+        <a class="nav-link" href="calisma-modeli.html">Çalışma Modeli</a>
+        <a class="nav-link" href="projeler.html">Deneyim</a>
+        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+        <a class="nav-link" href="iletisim.html" aria-current="page">İletişim</a>
+        <a class="btn btn--accent nav-mobile-cta" href="iletisim.html#proje-brifi">Projenizi konuşalım <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+    </nav>
+    <a class="btn btn--sm header-cta" href="iletisim.html#proje-brifi">Projenizi konuşalım <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Menüyü aç"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
 </header>
-<main>
-<h2>📞 İletişim Bilgileri</h2>
-<p><strong>📍 Adres:</strong> Gözcüler Mah. 8. Sokak, Arsuz / Hatay</p>
-<p><strong>📱 Telefon 1:</strong> +90 554 182 51 37</p>
-<p><strong>📱 Telefon 2:</strong> +7 911 748 7776</p>
-<p><strong>📧 E-posta:</strong> arzenoinsaat@gmail.com</p>
-<p><strong>🕒 Mesai Saatleri:</strong> Hafta içi 09:00 - 18:00</p>
-<h2>📍 Konum</h2>
-<iframe allowfullscreen="" loading="lazy" src="https://www.google.com/maps?q=Gözcüler+Mah.+8.+Sokak,+Arsuz,+Hatay&amp;output=embed"></iframe>
+<div class="menu-backdrop" aria-hidden="true"></div>
+<main id="main-content">
+  <section class="page-hero">
+  <div class="container page-hero-inner">
+    <div>
+      <nav class="breadcrumb" aria-label="Sayfa yolu"><a href="index.html">Arzeno</a><span>/</span><span>İletişim</span></nav>
+      <p class="eyebrow">Proje Kontrol &amp; Danışmanlık</p>
+      <h1>Önce sorunu netleştirelim; sonra doğru kapsamı kuralım.</h1>
+      <p class="lead">Kısa proje brifini doldurun veya doğrudan iletişime geçin. İlk görüşme, ihtiyacı ve mevcut veriyi anlamaya odaklanır.</p>
+    </div>
+    <aside class="page-hero-aside">
+      <strong>Yanıt Süreci</strong>
+      <p>Proje brifleri mümkün olan en kısa sürede incelenir; gerekli başlangıç verisi ve görüşme gündemi birlikte paylaşılır.</p>
+    </aside>
+  </div>
+</section>
+
+  <section class="section" id="proje-brifi">
+    <div class="container contact-layout">
+      <aside class="contact-panel reveal">
+        <p class="eyebrow">Doğrudan İletişim</p>
+        <h2>Projenizi konuşalım.</h2>
+        <p>Uzaktan, hibrit veya sahada destek seçenekleri proje ihtiyacına göre değerlendirilir.</p>
+        <ul class="contact-list">
+          <li><a href="tel:+905541825137"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.79.62 2.64a2 2 0 0 1-.45 2.11L8 9.75a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.85.29 1.74.5 2.64.62A2 2 0 0 1 22 16.9z"/></svg><span><small>Telefon / WhatsApp</small><strong>+90 554 182 51 37</strong></span></a></li>
+          <li><a href="mailto:arzenoinsaat@gmail.com"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg><span><small>E-posta</small><strong>arzenoinsaat@gmail.com</strong></span></a></li>
+          <li><span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></svg><span><small>Merkez</small><strong>Arsuz, Hatay • Türkiye</strong></span></span></li>
+          <li><span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><small>Hizmet Alanı</small><strong>Türkiye geneli • Uzaktan / Hibrit / Sahada</strong></span></span></li>
+        </ul>
+        <div class="button-row"><a class="btn btn--accent btn--sm" href="https://wa.me/905541825137?text=Merhaba%20Arzeno%2C%20proje%20kontrol%20dan%C4%B1%C5%9Fmanl%C4%B1%C4%9F%C4%B1%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp’tan yaz <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a></div>
+        <p class="contact-note">Gizlilik gerektiren proje dokümanlarını ilk mesajda göndermeyin. Paylaşım yöntemi ve yetkilendirme görüşme sonrasında belirlenebilir.</p>
+      </aside>
+
+      <div class="brief-card reveal">
+        <p class="eyebrow">Kısa Proje Brifi</p>
+        <h2>İhtiyacı birkaç başlıkta anlatın.</h2>
+        <p>Form sunucuya veri göndermez. “E-posta taslağını aç” veya “WhatsApp’ta gönder” seçeneği, verdiğiniz bilgilerle kendi cihazınızda mesaj oluşturur.</p>
+        <noscript><p class="notice-box">Formu kullanmak için JavaScript etkin olmalıdır. Alternatif olarak <a href="mailto:arzenoinsaat@gmail.com">doğrudan e-posta gönderebilirsiniz.</a></p></noscript>
+        <form data-brief-form>
+          <div class="form-grid">
+            <div class="form-field"><label for="name">Ad soyad *</label><input id="name" name="name" autocomplete="name" required></div>
+            <div class="form-field"><label for="company">Firma / proje</label><input id="company" name="company" autocomplete="organization"></div>
+            <div class="form-field"><label for="contact">Telefon veya e-posta *</label><input id="contact" name="contact" autocomplete="email" required></div>
+            <div class="form-field"><label for="service">Öncelikli ihtiyaç *</label><select id="service" name="service" required><option value="" selected disabled>Seçiniz</option><option>Planlama ve iş programı</option><option>Bütçe ve maliyet kontrolü</option><option>İlerleme ve performans ölçümü</option><option>Yönetim raporlaması / dashboard</option><option>Claim ve gecikme desteği</option><option>Proje kontrol ofisi kurulumu</option><option>Henüz net değil / genel değerlendirme</option></select></div>
+            <div class="form-field form-field--full"><label for="phase">Proje aşaması</label><select id="phase" name="phase"><option>Teklif / ihale</option><option>Mobilizasyon</option><option>Aktif yapım</option><option>Gecikmiş / recovery</option><option>Kapanış / claim</option><option>Diğer</option></select></div>
+            <div class="form-field form-field--full"><label for="message">Kısa açıklama *</label><textarea id="message" name="message" required placeholder="Proje türü, yaklaşık süre, mevcut ekip, en kritik sorun ve beklediğiniz çıktıyı kısaca yazabilirsiniz."></textarea></div>
+          </div>
+          <div class="form-actions"><button class="btn" type="submit">E-posta taslağını aç <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></button><button class="btn btn--outline" type="button" data-whatsapp-brief>WhatsApp’ta gönder <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></button></div>
+          <p class="form-privacy">Form verisi bu web sitesinde saklanmaz. Ayrıntılar için <a href="gizlilik.html">gizlilik açıklamasını</a> inceleyebilirsiniz.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--muted">
+    <div class="container--narrow"><div class="section-heading--stacked"><p class="eyebrow">İlk Görüşmeye Hazırlık</p><h2>Hazırsa şu üç bilgi yeterli.</h2><p class="lead">Tüm proje dokümanlarını hazırlamanız gerekmez. İlk değerlendirme için temel bir çerçeve yeterlidir.</p></div><div class="grid-3" style="margin-top:38px"><article class="card reveal"><span class="problem-index">01</span><h3 style="margin-top:16px">Proje durumu</h3><p class="text-muted">Aşama, süre, sözleşme tipi ve ana teslim tarihleri.</p></article><article class="card reveal"><span class="problem-index">02</span><h3 style="margin-top:16px">Mevcut yapı</h3><p class="text-muted">Ekip, kullanılan program/rapor ve veri kaynakları.</p></article><article class="card reveal"><span class="problem-index">03</span><h3 style="margin-top:16px">Kritik sorun</h3><p class="text-muted">Şu anda yönetimin cevaplayamadığı en önemli soru.</p></article></div></div>
+  </section>
 </main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Arzeno anasayfa">
+          <img class="brand-wordmark" src="assets/img/arzeno-wordmark-white.png" width="760" height="392" alt="Arzeno">
+          <span class="brand-copy">
+            <strong>Project Controls</strong>
+            <span>Proje Kontrol &amp; Danışmanlık</span>
+          </span>
+        </a>
+        <p class="footer-intro">Orta ölçekli projelere; tam zamanlı departman yükü olmadan planlama, maliyet, ilerleme, raporlama ve claim disiplini kazandırır.</p>
+        <div class="tag-row">
+          <span class="pill pill--dark">Uzaktan</span>
+          <span class="pill pill--dark">Hibrit</span>
+          <span class="pill pill--dark">Sahada</span>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Hızlı Erişim</h3>
+        <ul class="footer-links">
+          <li><a href="hizmetler.html">Hizmetler</a></li>
+          <li><a href="calisma-modeli.html">Çalışma Modeli</a></li>
+          <li><a href="projeler.html">Sektörel Deneyim</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Uzmanlık</h3>
+        <ul class="footer-links">
+          <li><a href="hizmetler.html#planlama">Planlama &amp; Scheduling</a></li>
+          <li><a href="hizmetler.html#maliyet">Bütçe &amp; Maliyet Kontrolü</a></li>
+          <li><a href="hizmetler.html#ilerleme">İlerleme &amp; EVM</a></li>
+          <li><a href="hizmetler.html#claim">Claim &amp; Gecikme</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>İletişim</h3>
+        <ul class="footer-links">
+          <li><a href="tel:+905541825137">+90 554 182 51 37</a></li>
+          <li><a href="mailto:arzenoinsaat@gmail.com">arzenoinsaat@gmail.com</a></li>
+          <li><span>Arsuz, Hatay • Türkiye</span></li>
+          <li><a href="iletisim.html#proje-brifi">Proje brifi oluştur</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Arzeno. Tüm hakları saklıdır.</span>
+      <div class="footer-bottom-links">
+        <a href="gizlilik.html">Gizlilik</a>
+        <a href="sitemap.xml">Site Haritası</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>

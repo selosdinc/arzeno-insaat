@@ -1,259 +1,183 @@
-
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="tr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Arzeno İnşaat - Hizmetler</title>
-<style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: white;
-      color: #003366;
-    }
-    header {
-      background-color: #ffffff;
-      border-bottom: 1px solid #ddd;
-      padding: 15px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .logo img {
-      height: 80px;
-    }
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #003366;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #ff6600;
-    }
-    main {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2, h3 {
-      color: #003366;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 6px;
-    }
-    p, ul {
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hizmetler | Arzeno Proje Kontrol ve Danışmanlık</title>
+  <meta name="description" content="İş programı, maliyet kontrolü, ilerleme, EVM, yönetim raporlaması, claim ve proje kontrol ofisi kurulumu hizmetleri.">
+  <meta name="theme-color" content="#061724">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://arzeno.tr/hizmetler.html">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
   
-    img, iframe {
-      max-width: 100%;
-      height: auto;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-      }
-
-      nav {
-        width: 100%;
-        margin-top: 10px;
-      }
-
-      nav a {
-        display: block;
-        margin: 10px 0;
-        font-size: 1.1em;
-      }
-
-      main {
-        padding: 20px;
-        width: 100%;
-        box-sizing: border-box;
-      }
-    }
-    </style>
-<style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-}
-header {
-  background-color: #fff;
-  padding: 15px 20px;
-  border-bottom: 1px solid #ccc;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  height: 80px;
-}
-.hamburger {
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-}
-.mobile-menu {
-  display: flex;
-  gap: 20px;
-  justify-content: flex-end;
-}
-.mobile-menu a {
-  text-decoration: none;
-  color: #003366;
-  font-weight: bold;
-}
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border: 1px solid #ddd;
-    padding: 10px;
-    width: 200px;
-  }
-  .mobile-menu a {
-    padding: 10px 0;
-  }
-  .mobile-menu.show {
-    display: flex;
-  }
-}
-</style>
-<script>
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("show");
-}
-</script>
-<style>
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    position: absolute;
-    right: 25px;
-    top: 25px;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 1001;
-  }
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0,0,0,0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1000;
-  }
-  .mobile-menu.show {
-    display: flex;
-  }
-  .mobile-menu a {
-    color: white;
-    font-size: 1.5em;
-    margin: 15px 0;
-    text-decoration: none;
-  }
-  .close-btn {
-    font-size: 30px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-    cursor: pointer;
-  }
-}
-</style>
-<script>
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("show");
-}
-function closeMenu() {
-  document.getElementById("mobileMenu").classList.remove("show");
-}
-</script>
-
-<style>
-@media (max-width: 768px) {
-  body {
-    font-size: 80%;
-  }
-  main {
-    padding: 20px;
-  }
-  h2, h3 {
-    font-size: 1.1em;
-    text-align: center;
-    margin-bottom: 12px;
-  }
-  p, li {
-    font-size: 0.95em;
-    line-height: 1.6;
-    margin-bottom: 14px;
-    text-align: justify;
-  }
-}
-</style>
-</head>
-<body>
-<header>
-<div class="header-container">
-<img alt="Arzeno Logo" class="logo" src="logo_arzeno.png"/>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
-</div>
-<nav class="mobile-menu" id="mobileMenu">
-<a href="index.html">Anasayfa</a>
-<a href="hakkimizda.html">Hakkımızda</a>
-<a href="hizmetler.html">Hizmetler</a>
-<a href="projeler.html">Projeler</a>
-<a href="iletisim.html">İletişim</a>
-</nav>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="Arzeno">
+  <meta property="og:title" content="Hizmetler | Arzeno Proje Kontrol ve Danışmanlık">
+  <meta property="og:description" content="İş programı, maliyet kontrolü, ilerleme, EVM, yönetim raporlaması, claim ve proje kontrol ofisi kurulumu hizmetleri.">
+  <meta property="og:url" content="https://arzeno.tr/hizmetler.html">
+  <meta property="og:image" content="https://arzeno.tr/assets/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hizmetler | Arzeno Proje Kontrol ve Danışmanlık">
+  <meta name="twitter:description" content="İş programı, maliyet kontrolü, ilerleme, EVM, yönetim raporlaması, claim ve proje kontrol ofisi kurulumu hizmetleri.">
+  <meta name="twitter:image" content="https://arzeno.tr/assets/img/og-cover.jpg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Arzeno Proje Kontrol ve Danışmanlık", "alternateName": "Arzeno", "url": "https://arzeno.tr/", "logo": "https://arzeno.tr/assets/img/arzeno-wordmark-navy.png", "image": "https://arzeno.tr/assets/img/og-cover.jpg", "description": "Planlama, maliyet kontrolü, ilerleme ölçümü, yönetim raporlaması ve claim desteği sunan proje kontrol danışmanlığı.", "email": "arzenoinsaat@gmail.com", "telephone": "+90 554 182 51 37", "areaServed": {"@type": "Country", "name": "Türkiye"}, "address": {"@type": "PostalAddress", "addressLocality": "Arsuz", "addressRegion": "Hatay", "addressCountry": "TR"}, "serviceType": ["Proje kontrol danışmanlığı", "Planlama ve iş programı yönetimi", "Bütçe ve maliyet kontrolü", "İlerleme ve performans ölçümü", "Claim ve gecikme analizi", "Teknik ofis sistem kurulumu"]}</script>
+</head><body>
+<a class="skip-link" href="#main-content">Ana içeriğe geç</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Arzeno anasayfa">
+      <img class="brand-wordmark" src="assets/img/arzeno-wordmark-navy.png" width="760" height="392" alt="Arzeno">
+      <span class="brand-copy">
+        <strong>Project Controls</strong>
+        <span>Proje Kontrol &amp; Danışmanlık</span>
+      </span>
+    </a>
+    <nav class="site-nav" id="primary-navigation" aria-label="Ana menü">
+        <a class="nav-link" href="index.html">Anasayfa</a>
+        <a class="nav-link" href="hizmetler.html" aria-current="page">Hizmetler</a>
+        <a class="nav-link" href="calisma-modeli.html">Çalışma Modeli</a>
+        <a class="nav-link" href="projeler.html">Deneyim</a>
+        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+        <a class="nav-link" href="iletisim.html">İletişim</a>
+        <a class="btn btn--accent nav-mobile-cta" href="iletisim.html#proje-brifi">Projenizi konuşalım <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+    </nav>
+    <a class="btn btn--sm header-cta" href="iletisim.html#proje-brifi">Projenizi konuşalım <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Menüyü aç"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
 </header>
-<main>
-<h2>Hizmetlerimiz</h2>
-<h3>🏗️ Endüstriyel Yapılar ve EPC Projeleri</h3>
-<p>Rafineriler, enerji santralleri, petrokimya tesisleri gibi yüksek ölçekli projelerde mühendislik, malzeme temini ve uygulama (EPC) hizmetleri sunuyoruz. Sahadaki uygulama tecrübemiz ile ofisteki teknik disiplini birleştirerek güvenli, sürdürülebilir ve verimli yapılar inşa ediyoruz.</p>
-<h3>🏠 Konut, Karma Yaşam Alanları ve Güçlendirme İşleri</h3>
-<p>Modern mimari anlayışla tasarlanmış konut ve karma yaşam projelerinde estetik, işlevsellik ve mühendislik çözümlerini entegre ediyoruz. Ayrıca mevcut yapıların güçlendirilmesi, tamirat, tadilat ve yenileme işlerinde de anahtar teslim çözümler sunuyoruz.</p>
-<h3>🛠️ Mekanik Borulama ve Çelik Konstrüksiyon</h3>
-<p>Tesis içi proses borulama, altyapı sistemleri, yangın tesisatları, destek çelik yapılar ve ekipman montajı konusunda uzman ekiplerimizle hizmet veriyoruz. Ağır sanayi ve endüstriyel yapılarda mekanik altyapı çözümlerimizle öne çıkıyoruz.</p>
-<h3>📊 Proje Yönetimi ve Teknik Ofis Hizmetleri</h3>
-<p>Metraj, keşif, bütçeleme, teklif paketi hazırlama, hakediş ve sözleşme yönetimi gibi teknik ofis hizmetlerinde uluslararası EPC projelerindeki tecrübemizi aktarıyoruz. Tüm süreçleri detaylı şekilde takip ederek, projenin zamanında ve kontrollü ilerlemesini sağlıyoruz.</p>
-<h3>🔌 Elektrik Sistemleri ve Enerji Altyapısı</h3>
-<p>Orta ve alçak gerilim sistemleri, trafo merkezleri, kablolama, pano montajı ve test-devreye alma süreçlerinde proje bazlı mühendislik çözümleri sunuyoruz. Enerji altyapısını güvenli ve sürdürülebilir şekilde kuruyoruz.</p>
-<h3>📋 Mühendislik ve Danışmanlık</h3>
-<p>Sahada karşılaşılan teknik problemlere çözüm odaklı yaklaşımımızla destek sunuyor, kalite kontrol, verimlilik analizleri, alt yüklenici yönetimi ve teknik raporlama gibi konularda danışmanlık veriyoruz.</p>
+<div class="menu-backdrop" aria-hidden="true"></div>
+<main id="main-content">
+  <section class="page-hero">
+  <div class="container page-hero-inner">
+    <div>
+      <nav class="breadcrumb" aria-label="Sayfa yolu"><a href="index.html">Arzeno</a><span>/</span><span>Hizmetler</span></nav>
+      <p class="eyebrow">Proje Kontrol &amp; Danışmanlık</p>
+      <h1>Projenin bütün kontrol katmanlarını aynı yönetim dilinde birleştirin.</h1>
+      <p class="lead">Planlamadan maliyet tahminine, saha ilerlemesinden claim kayıtlarına kadar her çıktı birbiriyle konuşur.</p>
+    </div>
+    <aside class="page-hero-aside">
+      <strong>Modüler Kapsam</strong>
+      <p>Tek bir uzmanlık alanından başlayabilir veya entegre bir dış kaynak proje kontrol ofisi kurabilirsiniz.</p>
+    </aside>
+  </div>
+</section>
+
+  <section class="section">
+    <div class="container">
+      <div class="service-detail" id="planlama">
+        <div class="service-detail-heading"><span class="service-code">01 / PLANNING &amp; SCHEDULING</span><h2>Planlama ve İş Programı Yönetimi</h2></div>
+        <div class="service-detail-body"><p>İş programını sunum dosyası olmaktan çıkarıp saha, tedarik ve yönetim kararlarının ortak çalışma aracına dönüştürürüz. Mantık, takvim, kaynak, ilerleme ve tahmin aynı yapı içinde izlenir.</p><div class="deliverable-grid"><div class="deliverable"><strong>WBS ve aktivite yapısı</strong><span>Kapsamın ölçülebilir ve sorumluluk atanabilir iş paketlerine ayrılması.</span></div><div class="deliverable"><strong>Baseline iş programı</strong><span>Mantık bağları, takvimler, kilometre taşları ve kritik yolun kurulması.</span></div><div class="deliverable"><strong>Güncelleme ve tahmin</strong><span>Gerçekleşen tarihler, kalan süreler, sapma ve bitiş tahmini.</span></div><div class="deliverable"><strong>Lookahead &amp; recovery</strong><span>3–6 haftalık saha planı ve gecikme telafi senaryoları.</span></div><div class="deliverable"><strong>Schedule health check</strong><span>Açık uç, gereksiz kısıt, uzun aktivite, float ve mantık kalitesi kontrolü.</span></div><div class="deliverable"><strong>Planlama prosedürü</strong><span>Güncelleme takvimi, veri sorumluları ve raporlama kurallarının tanımı.</span></div></div></div>
+      </div>
+
+      <div class="service-detail" id="maliyet">
+        <div class="service-detail-heading"><span class="service-code">02 / COST CONTROL</span><h2>Bütçe ve Maliyet Kontrolü</h2></div>
+        <div class="service-detail-body"><p>Bütçe, satın alma taahhütleri, gerçekleşen maliyet, hakediş ve kalan iş tahmini tek kod yapısında izlenir. Amaç sadece geçmişi göstermek değil, projenin nereye gittiğini erken görmektir.</p><div class="deliverable-grid"><div class="deliverable"><strong>CBS ve kontrol bütçesi</strong><span>Sözleşme, disiplin, iş paketi ve maliyet türü bazında kontrol yapısı.</span></div><div class="deliverable"><strong>Commitment &amp; actual takibi</strong><span>Sipariş, alt yüklenici, fatura ve gerçekleşen maliyet görünümü.</span></div><div class="deliverable"><strong>ETC / EAC tahmini</strong><span>Kalan maliyet ve tamamlanma maliyeti için düzenli forecast.</span></div><div class="deliverable"><strong>Nakit akışı</strong><span>Gelir-gider zamanlaması, ödeme planı ve finansman ihtiyacı.</span></div><div class="deliverable"><strong>Sapma ve trend analizi</strong><span>Bütçe sapmasının nedeni, etkisi, sorumlusu ve düzeltici aksiyonu.</span></div><div class="deliverable"><strong>Değişiklik maliyetleri</strong><span>Onaylı, bekleyen ve potansiyel değişikliklerin ayrı izlenmesi.</span></div></div></div>
+      </div>
+
+      <div class="service-detail" id="ilerleme">
+        <div class="service-detail-heading"><span class="service-code">03 / PROGRESS &amp; EARNED VALUE</span><h2>İlerleme ve Performans Ölçümü</h2></div>
+        <div class="service-detail-body"><p>Fiziksel ilerleme, hakediş ilerlemesi ve mali ilerleme arasındaki farkı görünür kılarız. Ölçüm kuralları iş başlamadan tanımlanır; saha miktarı ve adam-saat verisi aynı kontrol döngüsüne bağlanır.</p><div class="deliverable-grid"><div class="deliverable"><strong>İlerleme ölçüm sistemi</strong><span>Miktar, kilometre taşı veya ağırlıklı adım bazlı ölçüm kuralları.</span></div><div class="deliverable"><strong>Ağırlıklandırma matrisi</strong><span>Disiplin, bina, iş paketi ve aktivite düzeyinde ağırlık dağılımı.</span></div><div class="deliverable"><strong>Adam-saat kontrolü</strong><span>Planlanan, kazanılan ve harcanan adam-saat karşılaştırması.</span></div><div class="deliverable"><strong>EVM göstergeleri</strong><span>PV, EV, AC, CPI, SPI ve performans trendleri.</span></div><div class="deliverable"><strong>S-eğrileri</strong><span>Plan, gerçekleşen ve tahmin ilerleme eğrileri.</span></div><div class="deliverable"><strong>Üretkenlik analizi</strong><span>Birim oranlar, ekip verimliliği ve sapma nedenleri.</span></div></div></div>
+      </div>
+
+      <div class="service-detail" id="raporlama">
+        <div class="service-detail-heading"><span class="service-code">04 / MANAGEMENT REPORTING</span><h2>Yönetim Raporlaması ve Dashboard</h2></div>
+        <div class="service-detail-body"><p>Raporu veri deposu değil karar ekranı olarak tasarlarız. Her kritik gösterge; sapma, neden, etkisi, sorumlu kişi ve hedef tarihle birlikte sunulur.</p><div class="deliverable-grid"><div class="deliverable"><strong>Haftalık kontrol paketi</strong><span>İlerleme, 3–6 hafta planı, kritik konular ve aksiyon listesi.</span></div><div class="deliverable"><strong>Aylık yönetim raporu</strong><span>Takvim, maliyet, nakit, performans, risk ve tahmin özeti.</span></div><div class="deliverable"><strong>KPI tasarımı</strong><span>Proje hedeflerine uygun, ölçülebilir ve karar üretmeye dönük göstergeler.</span></div><div class="deliverable"><strong>Dashboard</strong><span>Excel veya Power BI tabanlı görsel kontrol ekranları.</span></div><div class="deliverable"><strong>Aksiyon takip sistemi</strong><span>Karar, sorumlu, termin, durum ve kapanış etkisinin izlenmesi.</span></div><div class="deliverable"><strong>Veri kalite kontrolü</strong><span>Kaynak veri, versiyon, kesim tarihi ve mutabakat mekanizması.</span></div></div></div>
+      </div>
+
+      <div class="service-detail" id="claim">
+        <div class="service-detail-heading"><span class="service-code">05 / CHANGE, CLAIM &amp; DELAY</span><h2>Değişiklik, Claim ve Gecikme Desteği</h2></div>
+        <div class="service-detail-body"><p>Claim hazırlığı olay olduktan aylar sonra başlamaz. Talimat, yazışma, saha kaydı, program etkisi ve maliyet verisini olay anından itibaren yapılandırarak teknik dosyanın ispat gücünü artırırız.</p><div class="deliverable-grid"><div class="deliverable"><strong>Değişiklik kayıt sistemi</strong><span>Talimat, kapsam, durum, süre ve maliyet etkisinin tek listede takibi.</span></div><div class="deliverable"><strong>Olay kronolojisi</strong><span>Yazışma, tutanak, saha kaydı ve kararların tarihsel kurgusu.</span></div><div class="deliverable"><strong>Gecikme etkisi</strong><span>Kritik yol, eşzamanlı gecikme ve etkilenen iş paketlerinin teknik analizi.</span></div><div class="deliverable"><strong>Süre uzatımı altyapısı</strong><span>EOT dosyası için program, kayıt ve anlatım desteği.</span></div><div class="deliverable"><strong>Maliyet etkisi</strong><span>İlave kaynak, uzama, verimsizlik ve doğrudan maliyet kayıtları.</span></div><div class="deliverable"><strong>Claim register</strong><span>Potansiyel, hazırlanan, sunulan, onaylanan ve reddedilen talepler.</span></div></div><div class="notice-box" style="margin-top:24px"><strong>Teknik danışmanlık kapsamı</strong>Claim hizmeti; teknik kayıt, program ve maliyet analizi sağlar. Hukuki görüş veya avukatlık hizmeti değildir.</div></div>
+      </div>
+
+      <div class="service-detail" id="kurulum">
+        <div class="service-detail-heading"><span class="service-code">06 / PROJECT CONTROLS SETUP</span><h2>Proje Kontrol Ofisi ve Teknik Ofis Sistemi Kurulumu</h2></div>
+        <div class="service-detail-body"><p>Yeni başlayan veya kontrol altyapısı dağınık projelerde; organizasyon, prosedür, kodlama, şablon ve raporlama ritmini birlikte kurarız. Sistem kişiye bağlı kalmaz, proje ekibi tarafından sürdürülebilir hale gelir.</p><div class="deliverable-grid"><div class="deliverable"><strong>Kontrol planı ve prosedürler</strong><span>Planlama, maliyet, ilerleme, raporlama ve değişiklik süreçleri.</span></div><div class="deliverable"><strong>WBS / CBS entegrasyonu</strong><span>Takvim, bütçe, metraj, satın alma ve hakediş kodlarının eşleştirilmesi.</span></div><div class="deliverable"><strong>Şablon ve kayıtlar</strong><span>Standart günlük, haftalık, aylık ve yönetim raporu seti.</span></div><div class="deliverable"><strong>RACI ve veri takvimi</strong><span>Kim, hangi veriyi, ne zaman ve hangi formatta sağlar?</span></div><div class="deliverable"><strong>Alt yüklenici kontrolü</strong><span>Program, ilerleme, hakediş, kaynak ve değişiklik takibi.</span></div><div class="deliverable"><strong>Ekip eğitimi ve devir</strong><span>Kurulan sistemin proje kadrosuna aktarılması ve kullanım desteği.</span></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--muted">
+    <div class="container">
+      <div class="section-heading"><div><p class="eyebrow">Kapsam Seçimi</p><h2>Hangi projede hangi destek gerekir?</h2></div><p class="lead">Aşağıdaki matris ilk değerlendirme içindir; gerçek kapsam sözleşme ve proje verisi incelendikten sonra netleştirilir.</p></div>
+      <div class="table-wrap reveal"><table class="service-matrix"><thead><tr><th>Proje Durumu</th><th>Öncelikli Hizmet</th><th>Beklenen Sonuç</th></tr></thead><tbody><tr><td>Yeni mobilizasyon</td><td>Kontrol ofisi kurulumu + baseline</td><td>Kod yapısı, veri ritmi ve yönetim görünürlüğü baştan kurulur.</td></tr><tr><td>Program var, güncel değil</td><td>Schedule health check + güncelleme</td><td>Gerçek kritik yol ve güvenilir bitiş tahmini görünür.</td></tr><tr><td>Maliyet sapması büyüyor</td><td>Cost control + ETC/EAC</td><td>Sapma kaynağı ve tamamlanma maliyeti erken belirlenir.</td></tr><tr><td>Hakediş ve saha ilerlemesi uyuşmuyor</td><td>İlerleme ölçüm sistemi</td><td>Miktar, adam-saat, hakediş ve program ortak ölçüm diline geçer.</td></tr><tr><td>Gecikme / talimat yoğunluğu</td><td>Change register + claim desteği</td><td>Kayıt, süre ve maliyet etkisi kaybolmadan yapılandırılır.</td></tr><tr><td>Kalıcı kadro ekonomik değil</td><td>Aylık dış kaynak proje kontrol ofisi</td><td>İhtiyaç kadar uzman kapasitesi ve düzenli kontrol ritmi sağlanır.</td></tr></tbody></table></div>
+    </div>
+  </section>
+  <section class="section section--compact">
+  <div class="container">
+    <div class="cta-panel reveal">
+      <div class="cta-copy">
+        <p class="eyebrow">İlk Adım</p>
+        <h2>Kapsamı hizmet listesine göre değil, projenin gerçek sorununa göre kuralım.</h2>
+        <p>Mevcut iş programınızı, son aylık raporunuzu veya temel proje verisini paylaşın; en yüksek etkiyi yaratacak kontrol alanını birlikte belirleyelim.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn--accent" href="iletisim.html#proje-brifi">Proje brifi oluştur <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+        <a class="btn btn--ghost-light" href="tel:+905541825137">Telefonla görüş</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Arzeno anasayfa">
+          <img class="brand-wordmark" src="assets/img/arzeno-wordmark-white.png" width="760" height="392" alt="Arzeno">
+          <span class="brand-copy">
+            <strong>Project Controls</strong>
+            <span>Proje Kontrol &amp; Danışmanlık</span>
+          </span>
+        </a>
+        <p class="footer-intro">Orta ölçekli projelere; tam zamanlı departman yükü olmadan planlama, maliyet, ilerleme, raporlama ve claim disiplini kazandırır.</p>
+        <div class="tag-row">
+          <span class="pill pill--dark">Uzaktan</span>
+          <span class="pill pill--dark">Hibrit</span>
+          <span class="pill pill--dark">Sahada</span>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Hızlı Erişim</h3>
+        <ul class="footer-links">
+          <li><a href="hizmetler.html">Hizmetler</a></li>
+          <li><a href="calisma-modeli.html">Çalışma Modeli</a></li>
+          <li><a href="projeler.html">Sektörel Deneyim</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Uzmanlık</h3>
+        <ul class="footer-links">
+          <li><a href="hizmetler.html#planlama">Planlama &amp; Scheduling</a></li>
+          <li><a href="hizmetler.html#maliyet">Bütçe &amp; Maliyet Kontrolü</a></li>
+          <li><a href="hizmetler.html#ilerleme">İlerleme &amp; EVM</a></li>
+          <li><a href="hizmetler.html#claim">Claim &amp; Gecikme</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>İletişim</h3>
+        <ul class="footer-links">
+          <li><a href="tel:+905541825137">+90 554 182 51 37</a></li>
+          <li><a href="mailto:arzenoinsaat@gmail.com">arzenoinsaat@gmail.com</a></li>
+          <li><span>Arsuz, Hatay • Türkiye</span></li>
+          <li><a href="iletisim.html#proje-brifi">Proje brifi oluştur</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Arzeno. Tüm hakları saklıdır.</span>
+      <div class="footer-bottom-links">
+        <a href="gizlilik.html">Gizlilik</a>
+        <a href="sitemap.xml">Site Haritası</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>

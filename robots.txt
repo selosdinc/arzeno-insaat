@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arzeno.tr/sitemap.xml

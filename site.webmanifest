@@ -1,0 +1,17 @@
+{
+  "name": "Arzeno Proje Kontrol ve Danışmanlık",
+  "short_name": "Arzeno",
+  "description": "Planlama, maliyet kontrolü, ilerleme, raporlama ve claim danışmanlığı.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#061724",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
