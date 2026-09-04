@@ -3540,3 +3540,77 @@ p {
     flex-basis: 84%;
   }
 }
+
+/* =========================================================
+   V2.2 — concise homepage, experience credit, HTTPS hardening
+   ========================================================= */
+.home-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
+  gap: 72px;
+  align-items: center;
+}
+
+.home-intro h2 {
+  max-width: 760px;
+}
+
+.home-intro-copy .lead {
+  margin-bottom: 18px;
+}
+
+.home-experience .section-heading {
+  margin-bottom: 38px;
+}
+
+.experience-credit {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 3;
+  max-width: calc(100% - 36px);
+  padding: 7px 10px;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(6, 23, 36, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  font-size: 0.58rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+}
+
+.experience-credit:hover {
+  color: var(--white);
+  background: rgba(6, 23, 36, 0.9);
+}
+
+@media (max-width: 700px) {
+  .home-intro {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .home-intro-copy .lead {
+    margin-bottom: 14px;
+    font-size: 0.94rem;
+  }
+
+  .home-experience .section-heading {
+    margin-bottom: 26px;
+  }
+
+  .experience-credit {
+    top: 12px;
+    right: 12px;
+    max-width: calc(100% - 24px);
+    padding: 6px 8px;
+    font-size: 0.52rem;
+  }
+}
+
+
+.experience-credit[hidden] {
+  display: none;
+}

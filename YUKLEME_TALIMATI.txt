@@ -1,0 +1,23 @@
+ARZENO V2.2 — GITHUB YÜKLEME TALİMATI
+
+1) ARZENO_Website_V2.2_HTTPS_Akkuyu_Kisa_Anasayfa_GitHub_Ready.zip dosyasını bilgisayarınızda açın / ayıklayın.
+2) ZIP dosyasının kendisini GitHub'a yüklemeyin.
+3) Ayıklanan klasörün İÇİNDEKİ tüm dosya ve klasörleri seçin.
+4) GitHub: selosdinc/arzeno-insaat > Add file > Upload files.
+5) Seçtiğiniz içerikleri yükleme alanına sürükleyin. Repo kökünde index.html ve assets/ birlikte görünmelidir.
+6) Commit changes düğmesine basın.
+7) Settings > Pages bölümünde Custom domain = arzeno.tr ve Enforce HTTPS açık kalmalıdır.
+8) Yayın sonrası yeni sürümü kontrol etmek için https://arzeno.tr/?v=22 adresini açın veya gizli sekme kullanın.
+
+DOĞRU KÖK YAPISI
+index.html
+projeler.html
+hizmetler.html
+calisma-modeli.html
+hakkimizda.html
+iletisim.html
+assets/
+CNAME
+.nojekyll
+
+Not: Mevcut eski görseller repo kökünde kalsa da çalışmayı bozmaz; ancak yeni site assets/ klasöründeki dosyaları kullanır.

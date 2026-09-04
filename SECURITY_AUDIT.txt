@@ -1,0 +1,19 @@
+ARZENO V2.2 SECURITY / CONTENT AUDIT
+Date: 2026-09-04
+
+HTML pages checked: 8
+Insecure fetchable http:// references: 0
+HTTPS redirect guard: present on all HTML pages
+CSP upgrade-insecure-requests: present on all HTML pages
+CSP block-all-mixed-content: present on all HTML pages
+CSS/JS cache version: v2.2.0
+Internal links / local assets: checked, missing references: 0
+Responsive overflow test: 390 px and 1440 px, passed
+Console / page errors during local test: 0
+
+Homepage change:
+- Main-content words: 711 -> 497 (-30%)
+- Mobile rendered height: 7847 px -> 5948 px (-24%)
+- Desktop rendered height: 6446 px -> 4827 px (-25%)
+
+RESULT: No insecure fetchable resources or missing local dependencies were found in the package.

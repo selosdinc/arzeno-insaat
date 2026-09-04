@@ -38,6 +38,29 @@
   updateHeader();
   window.addEventListener("scroll", updateHeader, { passive: true });
 
+
+  document.querySelectorAll("img[data-fallback]").forEach((image) => {
+    const useFallback = () => {
+      const fallback = image.dataset.fallback;
+      if (!fallback) return;
+      const fallbackUrl = new URL(fallback, document.baseURI).href;
+      if (image.currentSrc === fallbackUrl || image.src === fallbackUrl) return;
+      const fallbackAlt = image.dataset.fallbackAlt;
+      image.removeAttribute("data-fallback");
+      image.removeAttribute("data-fallback-alt");
+      if (fallbackAlt) image.alt = fallbackAlt;
+      image.closest(".experience-card")?.querySelector(".experience-credit")?.setAttribute("hidden", "");
+      image.src = fallbackUrl;
+    };
+
+    image.addEventListener("error", useFallback, { once: true });
+
+    // Ağ veya harici görsel sunucusu yanıt vermediğinde kartı boş bırakma.
+    window.setTimeout(() => {
+      if (!image.complete || image.naturalWidth === 0) useFallback();
+    }, 5000);
+  });
+
   document.querySelectorAll("[data-year]").forEach((node) => {
     node.textContent = String(new Date().getFullYear());
   });

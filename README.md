@@ -1,4 +1,4 @@
-# Arzeno Project Controls & Consultancy — Website V2.1
+# Arzeno Project Controls & Consultancy — Website V2.2
 
 `arzeno.tr` için hazırlanmış, GitHub Pages üzerinde doğrudan yayınlanabilen statik web sitesidir.
 
@@ -63,6 +63,21 @@ Site form verisini saklamaz. İleride gerçek form gönderimi istenirse Formspre
 
 ## Sürüm
 
-V2.1 — Eylül 2026
+V2.2 — Eylül 2026
 
-Bu sürümde masaüstü tasarım korunmuş; mobil görünüm baştan ele alınarak daha kompakt başlık ölçeği, mobil dashboard, tam ekran menü, kısa servis kartları, dikey süreç akışı, iki sütunlu performans kartları ve daha düzenli mobil footer uygulanmıştır.
+Bu sürümde:
+
+- Anasayfadaki tekrar eden ve uzun açıklamalar kaldırılarak akış kısaltıldı.
+- Hizmetler ve Çalışma Modeli içerikleri korunmuştur.
+- Deneyim bilgisi 8+ yıl olarak güncellendi.
+- Akkuyu NPP deneyimi, lisanslı fotoğraf ve görünür kaynak bilgisiyle eklendi.
+- HTTP girişlerini HTTPS’e yönlendiren istemci tarafı koruması ile mixed-content yükseltme politikası eklendi.
+- CSS ve JavaScript bağlantılarına sürüm parametresi eklenerek eski tarayıcı önbelleğinin kırılması sağlandı.
+
+## HTTPS / güvenlik notu
+
+Tüm sayfalarda `upgrade-insecure-requests` ve `block-all-mixed-content` politikası bulunur. HTTP üzerinden açılan özel alan adı, JavaScript ile HTTPS adresine yönlendirilir. GitHub Pages tarafında `Enforce HTTPS` açık kalmalıdır.
+
+## Harici görsel
+
+Akkuyu NPP kartındaki fotoğraf HTTPS üzerinden Wikimedia Commons'tan yüklenir. Bağlantı kesilirse yerel endüstriyel görsel otomatik yedek olarak kullanılır. Lisans ayrıntıları `CREDITS.md` dosyasındadır.
