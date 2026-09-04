@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Arzeno">
+  <rect width="64" height="64" rx="15" fill="#061724"/>
+  <path d="M14 48 30.6 14h4.8L52 48h-8.1l-3.4-7.6H25.1L21.8 48H14Zm13.9-14.3h9.8L32.8 22l-4.9 11.7Z" fill="#fff"/>
+  <path d="M18 52h29" stroke="#F0A53A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M45 15h7M47 21h5M49 27h3" stroke="#2A98A2" stroke-width="3" stroke-linecap="round"/>
+</svg>
